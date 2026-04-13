@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:43.772241+00:00",
+  "generated_at": "2026-04-13T06:23:47.148059+00:00",
+  "location_type": "optional_integration",
+  "name": "apilio-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/apilio-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

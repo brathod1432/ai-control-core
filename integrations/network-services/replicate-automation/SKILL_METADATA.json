@@ -1,0 +1,15 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.408670+00:00",
+  "generated_at": "2026-04-13T06:23:53.494558+00:00",
+  "location_type": "optional_integration",
+  "name": "replicate-automation",
+  "risk_categories": [
+    "exfiltration",
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/replicate-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

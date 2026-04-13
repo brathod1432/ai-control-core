@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:58.116840+00:00",
+  "name": "browser-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering/browser-automation",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

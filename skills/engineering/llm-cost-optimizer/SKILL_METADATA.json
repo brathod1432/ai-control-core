@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:24:00.696889+00:00",
+  "name": "llm-cost-optimizer",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering/llm-cost-optimizer",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

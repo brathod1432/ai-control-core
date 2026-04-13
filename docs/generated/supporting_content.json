@@ -1,0 +1,92 @@
+[
+  {
+    "note": "canonical skill specification",
+    "path": "standards/agent-skills-spec.md",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\spec\\agent-skills-spec.md"
+  },
+  {
+    "note": "canonical skill template",
+    "path": "templates/skill-template",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\template"
+  },
+  {
+    "note": "secondary template source",
+    "path": "integrations/platforms/composio/template-skill",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\template-skill"
+  },
+  {
+    "note": "operational templates",
+    "path": "templates/operational-templates",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\templates"
+  },
+  {
+    "note": "team standards",
+    "path": "standards/operational-standards",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\standards"
+  },
+  {
+    "note": "authoring standard",
+    "path": "standards/skill-authoring-standard.md",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\SKILL-AUTHORING-STANDARD.md"
+  },
+  {
+    "note": "cross-tool conventions",
+    "path": "rules/CONVENTIONS.md",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\CONVENTIONS.md"
+  },
+  {
+    "note": "Claude instruction source, retained as rule reference",
+    "path": "integrations/platforms/anthropic/legacy-claude-runtime-guide.md",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\CLAUDE.md"
+  },
+  {
+    "note": "Gemini instruction source, retained as rule reference",
+    "path": "integrations/platforms/google/gemini-cli-guide.md",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\GEMINI.md"
+  },
+  {
+    "note": "command templates, inert markdown",
+    "path": "rules/commands",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\.claude\\commands"
+  },
+  {
+    "note": "agent persona instructions",
+    "path": "agents",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\agents"
+  },
+  {
+    "note": "MCP builder references",
+    "path": "mcp/reference",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\mcp-builder\\reference"
+  },
+  {
+    "note": "disabled upstream MCP config",
+    "path": "integrations/mcp-clients/tessl.mcp.json.disabled",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\.mcp.json"
+  },
+  {
+    "note": "disabled plugin manifest",
+    "path": "integrations/platforms/codex/codex-plugin.json.disabled",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\.codex-plugin\\plugin.json"
+  },
+  {
+    "note": "disabled plugin marketplace metadata",
+    "path": "integrations/platforms/anthropic/claude-marketplace.json.disabled",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\.claude-plugin\\marketplace.json"
+  },
+  {
+    "note": "disabled plugin manifest",
+    "path": "integrations/platforms/composio/connect-apps-plugin.json.disabled",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\connect-apps-plugin\\.claude-plugin\\plugin.json"
+  },
+  {
+    "note": "upstream MIT license",
+    "path": "docs/licenses/alirezarezvani-claude-skills-MIT-LICENSE.txt",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\LICENSE"
+  },
+  {
+    "note": "upstream third-party notices",
+    "path": "docs/licenses/anthropic-THIRD_PARTY_NOTICES.md",
+    "source": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\THIRD_PARTY_NOTICES.md"
+  }
+]

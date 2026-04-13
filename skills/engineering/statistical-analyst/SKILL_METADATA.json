@@ -1,0 +1,11 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:24:01.730176+00:00",
+  "name": "statistical-analyst",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "engineering/statistical-analyst",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

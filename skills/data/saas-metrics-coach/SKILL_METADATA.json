@@ -1,0 +1,12 @@
+{
+  "category": "data",
+  "generated_at": "2026-04-13T06:23:57.631694+00:00",
+  "name": "saas-metrics-coach",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "finance/saas-metrics-coach",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

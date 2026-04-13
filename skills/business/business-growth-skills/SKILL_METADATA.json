@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:55.958968+00:00",
+  "name": "business-growth-skills",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "business-growth",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

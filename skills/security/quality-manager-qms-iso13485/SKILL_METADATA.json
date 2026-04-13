@@ -1,0 +1,11 @@
+{
+  "category": "security",
+  "generated_at": "2026-04-13T06:24:03.419355+00:00",
+  "name": "quality-manager-qms-iso13485",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "ra-qm-team/quality-manager-qms-iso13485",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

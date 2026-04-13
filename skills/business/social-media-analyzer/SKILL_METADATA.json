@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:57.312558+00:00",
+  "name": "social-media-analyzer",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "marketing-skill/social-media-analyzer",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

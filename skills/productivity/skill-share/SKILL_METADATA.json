@@ -1,0 +1,11 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:03.068489+00:00",
+  "name": "skill-share",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "skill-share",
+  "source_repository": "composio",
+  "status": "opt_in_external"
+}

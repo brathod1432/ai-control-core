@@ -1,0 +1,13 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.035349+00:00",
+  "generated_at": "2026-04-13T06:23:49.710084+00:00",
+  "location_type": "optional_integration",
+  "name": "excel-automation",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "composio-skills/excel-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

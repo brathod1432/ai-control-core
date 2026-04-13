@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:57.327244+00:00",
+  "name": "social-media-manager",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "marketing-skill/social-media-manager",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

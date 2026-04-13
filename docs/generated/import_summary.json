@@ -1,0 +1,26 @@
+{
+  "category_counts": {
+    "business": 79,
+    "data": 8,
+    "engineering": 85,
+    "integration": 813,
+    "mcp": 1,
+    "media": 6,
+    "productivity": 39,
+    "research": 2,
+    "security": 14,
+    "writing": 3
+  },
+  "core_skills": 237,
+  "location_counts": {
+    "core": 237,
+    "optional_integration": 813
+  },
+  "optional_integrations": 813,
+  "skills_indexed": 1050,
+  "status_counts": {
+    "active_local": 49,
+    "disabled_by_default": 833,
+    "opt_in_external": 168
+  }
+}

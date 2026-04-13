@@ -1,0 +1,11 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.796627+00:00",
+  "name": "product-manager-toolkit",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "product-team/product-manager-toolkit",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

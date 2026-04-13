@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.258019+00:00",
+  "generated_at": "2026-04-13T06:23:51.945429+00:00",
+  "location_type": "optional_integration",
+  "name": "many-chat-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/many-chat-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

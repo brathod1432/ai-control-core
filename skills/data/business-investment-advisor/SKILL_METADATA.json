@@ -1,0 +1,11 @@
+{
+  "category": "data",
+  "generated_at": "2026-04-13T06:23:57.395374+00:00",
+  "name": "business-investment-advisor",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "finance/business-investment-advisor",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

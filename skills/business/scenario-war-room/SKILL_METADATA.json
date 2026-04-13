@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:57.192425+00:00",
+  "name": "scenario-war-room",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor/scenario-war-room",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.611798+00:00",
+  "name": "landing-page-generator",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "product-team/landing-page-generator",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

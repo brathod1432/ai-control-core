@@ -1,0 +1,13 @@
+{
+  "category": "data",
+  "generated_at": "2026-04-13T06:23:57.466337+00:00",
+  "name": "docx",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "skills/docx",
+  "source_repository": "anthropic",
+  "status": "disabled_by_default"
+}

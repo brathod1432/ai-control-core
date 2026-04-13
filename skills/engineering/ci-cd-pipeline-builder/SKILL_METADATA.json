@@ -1,0 +1,11 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:58.161101+00:00",
+  "name": "ci-cd-pipeline-builder",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "engineering/ci-cd-pipeline-builder",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

@@ -1,0 +1,12 @@
+{
+  "category": "security",
+  "generated_at": "2026-04-13T06:24:03.281878+00:00",
+  "name": "gdpr-dsgvo-expert",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "ra-qm-team/gdpr-dsgvo-expert",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

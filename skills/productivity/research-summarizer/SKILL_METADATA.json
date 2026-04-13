@@ -1,0 +1,12 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.944245+00:00",
+  "name": "research-summarizer",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "product-team/research-summarizer",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

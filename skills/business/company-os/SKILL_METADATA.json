@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.271364+00:00",
+  "name": "company-os",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor/company-os",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

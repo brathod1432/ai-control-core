@@ -1,0 +1,11 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.646376+00:00",
+  "name": "meeting-analyzer",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "project-management/meeting-analyzer",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

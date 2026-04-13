@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.130411+00:00",
+  "generated_at": "2026-04-13T06:23:50.620112+00:00",
+  "location_type": "optional_integration",
+  "name": "googleslides-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/googleslides-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

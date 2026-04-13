@@ -1,0 +1,11 @@
+{
+  "category": "research",
+  "generated_at": "2026-04-13T06:24:03.208522+00:00",
+  "name": "competitive-ads-extractor",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "competitive-ads-extractor",
+  "source_repository": "composio",
+  "status": "opt_in_external"
+}

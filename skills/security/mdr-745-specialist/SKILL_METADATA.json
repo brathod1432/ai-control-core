@@ -1,0 +1,12 @@
+{
+  "category": "security",
+  "generated_at": "2026-04-13T06:24:03.335261+00:00",
+  "name": "mdr-745-specialist",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "ra-qm-team/mdr-745-specialist",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

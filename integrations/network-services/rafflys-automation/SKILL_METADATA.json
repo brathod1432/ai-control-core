@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.391507+00:00",
+  "generated_at": "2026-04-13T06:23:53.309440+00:00",
+  "location_type": "optional_integration",
+  "name": "rafflys-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/rafflys-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

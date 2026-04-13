@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.149420+00:00",
+  "generated_at": "2026-04-13T06:23:50.822188+00:00",
+  "location_type": "optional_integration",
+  "name": "hashnode-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/hashnode-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

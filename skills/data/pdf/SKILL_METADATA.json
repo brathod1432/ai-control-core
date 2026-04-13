@@ -1,0 +1,12 @@
+{
+  "category": "data",
+  "generated_at": "2026-04-13T06:23:57.539606+00:00",
+  "name": "pdf",
+  "risk_categories": [
+    "command",
+    "secrets"
+  ],
+  "source_relative_path": "skills/pdf",
+  "source_repository": "anthropic",
+  "status": "disabled_by_default"
+}

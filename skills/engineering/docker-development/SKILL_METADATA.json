@@ -1,0 +1,13 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:58.489637+00:00",
+  "name": "docker-development",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering/docker-development",
+  "source_repository": "alirezarezvani",
+  "status": "disabled_by_default"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.503413+00:00",
+  "name": "domain-name-brainstormer",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "domain-name-brainstormer",
+  "source_repository": "composio",
+  "status": "opt_in_external"
+}

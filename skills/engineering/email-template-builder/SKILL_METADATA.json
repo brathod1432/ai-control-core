@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:58.526056+00:00",
+  "name": "email-template-builder",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering-team/email-template-builder",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

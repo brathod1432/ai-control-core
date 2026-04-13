@@ -1,0 +1,11 @@
+{
+  "category": "security",
+  "generated_at": "2026-04-13T06:24:03.396840+00:00",
+  "name": "quality-manager-qmr",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "ra-qm-team/quality-manager-qmr",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

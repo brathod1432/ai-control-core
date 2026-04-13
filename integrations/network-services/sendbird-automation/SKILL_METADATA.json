@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.454244+00:00",
+  "generated_at": "2026-04-13T06:23:54.029342+00:00",
+  "location_type": "optional_integration",
+  "name": "sendbird-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/sendbird-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

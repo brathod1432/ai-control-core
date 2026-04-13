@@ -1,0 +1,13 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:24:00.424245+00:00",
+  "name": "google-workspace-cli",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering-team/google-workspace-cli",
+  "source_repository": "alirezarezvani",
+  "status": "disabled_by_default"
+}

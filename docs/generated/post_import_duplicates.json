@@ -1,0 +1,681 @@
+{
+  "exact_duplicates": {},
+  "near_duplicates": [
+    {
+      "left": "ably-automation",
+      "right": "cal-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "ably-automation",
+      "right": "tally-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "agentql-automation",
+      "right": "agenty-automation",
+      "similarity": 0.914
+    },
+    {
+      "left": "agiled-automation",
+      "right": "kaggle-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "agiled-automation",
+      "right": "retailed-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "amara-automation",
+      "right": "amcards-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "apaleo-automation",
+      "right": "apilio-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "apify automation",
+      "right": "spotify automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "apilio-automation",
+      "right": "pilvio-automation",
+      "similarity": 0.941
+    },
+    {
+      "left": "apilio-automation",
+      "right": "plisio-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "benzinga-automation",
+      "right": "enigma-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "bigmailer-automation",
+      "right": "bigml-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "blackbaud-automation",
+      "right": "blackboard-automation",
+      "similarity": 0.927
+    },
+    {
+      "left": "bolna-automation",
+      "right": "bonsai-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "bonsai-automation",
+      "right": "browseai-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "brex-automation",
+      "right": "exa-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "browseai-automation",
+      "right": "browser-automation",
+      "similarity": 0.919
+    },
+    {
+      "left": "browser-automation",
+      "right": "browserhub-automation",
+      "similarity": 0.923
+    },
+    {
+      "left": "browser-automation",
+      "right": "browserless-automation",
+      "similarity": 0.9
+    },
+    {
+      "left": "browser-tool-automation",
+      "right": "browserbase-tool-automation",
+      "similarity": 0.92
+    },
+    {
+      "left": "cal-automation",
+      "right": "cardly-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "cal-automation",
+      "right": "cats-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "cats-automation",
+      "right": "cults-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "ceo-advisor",
+      "right": "cfo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "ceo-advisor",
+      "right": "cmo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "ceo-advisor",
+      "right": "coo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "ceo-advisor",
+      "right": "cpo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "ceo-advisor",
+      "right": "cro-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "ceo-advisor",
+      "right": "cto-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cfo-advisor",
+      "right": "cmo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cfo-advisor",
+      "right": "coo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cfo-advisor",
+      "right": "cpo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cfo-advisor",
+      "right": "cro-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cfo-advisor",
+      "right": "cto-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "chro-advisor",
+      "right": "cro-advisor",
+      "similarity": 0.957
+    },
+    {
+      "left": "cincopa-automation",
+      "right": "coupa-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "cloudcart-automation",
+      "right": "cloudconvert-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "cloudflare-automation",
+      "right": "cloudlayer-automation",
+      "similarity": 0.905
+    },
+    {
+      "left": "cmo-advisor",
+      "right": "coo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cmo-advisor",
+      "right": "cpo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cmo-advisor",
+      "right": "cro-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cmo-advisor",
+      "right": "cto-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "coinmarketcal-automation",
+      "right": "coinmarketcap-automation",
+      "similarity": 0.958
+    },
+    {
+      "left": "coo-advisor",
+      "right": "cpo-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "coo-advisor",
+      "right": "cro-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "coo-advisor",
+      "right": "cto-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cpo-advisor",
+      "right": "cro-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cpo-advisor",
+      "right": "cto-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "cro-advisor",
+      "right": "cto-advisor",
+      "similarity": 0.909
+    },
+    {
+      "left": "daffy-automation",
+      "right": "rafflys-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "detrack-automation",
+      "right": "sidetracker-automation",
+      "similarity": 0.9
+    },
+    {
+      "left": "docsumo-automation",
+      "right": "documenso-automation",
+      "similarity": 0.895
+    },
+    {
+      "left": "docsumo-automation",
+      "right": "dromo-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "docupilot-automation",
+      "right": "docupost-automation",
+      "similarity": 0.923
+    },
+    {
+      "left": "dromo-automation",
+      "right": "fomo-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "enigma-automation",
+      "right": "leiga-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "everhour-automation",
+      "right": "vero-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "exa-automation",
+      "right": "keap-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "exist-automation",
+      "right": "gist-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "exist-automation",
+      "right": "textit-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "fibery-automation",
+      "right": "fireberry-automation",
+      "similarity": 0.919
+    },
+    {
+      "left": "fibery-automation",
+      "right": "fixer-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "finage-automation",
+      "right": "finmei-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "fixer-automation",
+      "right": "fixer-io-automation",
+      "similarity": 0.914
+    },
+    {
+      "left": "fixer-automation",
+      "right": "refiner-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "fomo-automation",
+      "right": "moz-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "gagelist-automation",
+      "right": "gist-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "gender-api-automation",
+      "right": "genderapi-io-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "getform-automation",
+      "right": "tapform-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "gist-automation",
+      "right": "grist-automation",
+      "similarity": 0.968
+    },
+    {
+      "left": "gist-automation",
+      "right": "kit-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "gladia-automation",
+      "right": "godial-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "gleap-automation",
+      "right": "keap-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "google-admin-automation",
+      "right": "googleads-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "google-maps-automation",
+      "right": "googleads-automation",
+      "similarity": 0.905
+    },
+    {
+      "left": "googleads-automation",
+      "right": "googledocs-automation",
+      "similarity": 0.927
+    },
+    {
+      "left": "googleads-automation",
+      "right": "googleslides-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "googleads-automation",
+      "right": "googletasks-automation",
+      "similarity": 0.905
+    },
+    {
+      "left": "here-automation",
+      "right": "heyreach-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "here-automation",
+      "right": "hyperise-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "insighto-ai-automation",
+      "right": "winston-ai-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "ip2location-automation",
+      "right": "ip2location-io-automation",
+      "similarity": 0.936
+    },
+    {
+      "left": "isms-audit-expert",
+      "right": "qms-audit-expert",
+      "similarity": 0.909
+    },
+    {
+      "left": "kadoa-automation",
+      "right": "kaleido-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "keen-io-automation",
+      "right": "kraken-io-automation",
+      "similarity": 0.895
+    },
+    {
+      "left": "launch-darkly-automation",
+      "right": "launchdarkly automation",
+      "similarity": 0.936
+    },
+    {
+      "left": "lever automation",
+      "right": "leverly-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "leverly-automation",
+      "right": "venly-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "linkhut-automation",
+      "right": "linkup-automation",
+      "similarity": 0.914
+    },
+    {
+      "left": "loomio-automation",
+      "right": "zoominfo-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "melo-automation",
+      "right": "mem-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "melo-automation",
+      "right": "mezmo-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "melo-automation",
+      "right": "moz-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "melo-automation",
+      "right": "veo-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "mem-automation",
+      "right": "mem0-automation",
+      "similarity": 0.966
+    },
+    {
+      "left": "mem-automation",
+      "right": "mezmo-automation",
+      "similarity": 0.933
+    },
+    {
+      "left": "mem0-automation",
+      "right": "mezmo-automation",
+      "similarity": 0.903
+    },
+    {
+      "left": "memberspot-automation",
+      "right": "memberstack-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "moco-automation",
+      "right": "moz-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "nasa-automation",
+      "right": "nasdaq-automation",
+      "similarity": 0.938
+    },
+    {
+      "left": "neverbounce-automation",
+      "right": "zerobounce-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "onedesk-automation",
+      "right": "sevdesk-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "onedesk-automation",
+      "right": "toneden-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "paradym-automation",
+      "right": "parma-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "parma-automation",
+      "right": "parsera-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "parma-automation",
+      "right": "prisma-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "parsehub-automation",
+      "right": "parseur-automation",
+      "similarity": 0.919
+    },
+    {
+      "left": "parsera-automation",
+      "right": "parseur-automation",
+      "similarity": 0.944
+    },
+    {
+      "left": "pdfless-automation",
+      "right": "typless-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "pilvio-automation",
+      "right": "plisio-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "placid-automation",
+      "right": "plain-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "plain-automation",
+      "right": "plasmic-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "plain-automation",
+      "right": "zeplin-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "polygon-automation",
+      "right": "polygon-io-automation",
+      "similarity": 0.923
+    },
+    {
+      "left": "productlane-automation",
+      "right": "rocketlane-automation",
+      "similarity": 0.884
+    },
+    {
+      "left": "proofly-automation",
+      "right": "rootly-automation",
+      "similarity": 0.914
+    },
+    {
+      "left": "raisely-automation",
+      "right": "reply-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "recallai-automation",
+      "right": "retellai-automation",
+      "similarity": 0.895
+    },
+    {
+      "left": "reply-automation",
+      "right": "reply-io-automation",
+      "similarity": 0.914
+    },
+    {
+      "left": "reply-automation",
+      "right": "serply-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "ring-central-automation",
+      "right": "ringcentral automation",
+      "similarity": 0.933
+    },
+    {
+      "left": "ritekit-automation",
+      "right": "timekit-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "scrapfly-automation",
+      "right": "serply-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "share-point-automation",
+      "right": "sharepoint automation",
+      "similarity": 0.93
+    },
+    {
+      "left": "survey-monkey-automation",
+      "right": "surveymonkey automation",
+      "similarity": 0.936
+    },
+    {
+      "left": "tally-automation",
+      "right": "tavily-automation",
+      "similarity": 0.909
+    },
+    {
+      "left": "tavily-automation",
+      "right": "timely-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "teamcamp-automation",
+      "right": "timecamp-automation",
+      "similarity": 0.895
+    },
+    {
+      "left": "telnyx-automation",
+      "right": "timely-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "timelink-automation",
+      "right": "timely-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "v0-automation",
+      "right": "veo-automation",
+      "similarity": 0.889
+    },
+    {
+      "left": "veo-automation",
+      "right": "vero-automation",
+      "similarity": 0.966
+    },
+    {
+      "left": "wakatime-automation",
+      "right": "wati-automation",
+      "similarity": 0.882
+    },
+    {
+      "left": "wati-automation",
+      "right": "wiz-automation",
+      "similarity": 0.897
+    },
+    {
+      "left": "winston-ai-automation",
+      "right": "wit-ai-automation",
+      "similarity": 0.895
+    }
+  ],
+  "skill_count": 1050
+}

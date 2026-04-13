@@ -1,0 +1,12 @@
+{
+  "category": "data",
+  "generated_at": "2026-04-13T06:23:57.610982+00:00",
+  "name": "pptx",
+  "risk_categories": [
+    "command",
+    "network"
+  ],
+  "source_relative_path": "skills/pptx",
+  "source_repository": "anthropic",
+  "status": "disabled_by_default"
+}

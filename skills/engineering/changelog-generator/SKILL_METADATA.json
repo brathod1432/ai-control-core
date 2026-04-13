@@ -1,0 +1,11 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:58.136607+00:00",
+  "name": "changelog-generator",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "engineering/changelog-generator",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

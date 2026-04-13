@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.606819+00:00",
+  "generated_at": "2026-04-13T06:23:55.495751+00:00",
+  "location_type": "optional_integration",
+  "name": "woodpecker-co-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/woodpecker-co-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

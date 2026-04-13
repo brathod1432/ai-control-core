@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.989943+00:00",
+  "name": "marketing-strategy-pmm",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "marketing-skill/marketing-strategy-pmm",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "media",
+  "generated_at": "2026-04-13T06:24:02.216070+00:00",
+  "name": "web-artifacts-builder",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "skills/web-artifacts-builder",
+  "source_repository": "anthropic",
+  "status": "opt_in_external"
+}

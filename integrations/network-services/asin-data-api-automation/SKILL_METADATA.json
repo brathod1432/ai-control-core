@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:43.786243+00:00",
+  "generated_at": "2026-04-13T06:23:47.322919+00:00",
+  "location_type": "optional_integration",
+  "name": "asin-data-api-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/asin-data-api-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

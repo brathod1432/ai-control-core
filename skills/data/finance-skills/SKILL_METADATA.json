@@ -1,0 +1,11 @@
+{
+  "category": "data",
+  "generated_at": "2026-04-13T06:23:57.501250+00:00",
+  "name": "finance-skills",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "finance",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

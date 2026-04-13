@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:43.963744+00:00",
+  "generated_at": "2026-04-13T06:23:48.999051+00:00",
+  "location_type": "optional_integration",
+  "name": "detrack-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/detrack-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

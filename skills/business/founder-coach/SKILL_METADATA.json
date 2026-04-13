@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.628986+00:00",
+  "name": "founder-coach",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor/founder-coach",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:43.774241+00:00",
+  "generated_at": "2026-04-13T06:23:47.164191+00:00",
+  "location_type": "optional_integration",
+  "name": "apipie-ai-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/apipie-ai-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.225926+00:00",
+  "generated_at": "2026-04-13T06:23:51.654104+00:00",
+  "location_type": "optional_integration",
+  "name": "lemon-squeezy-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/lemon-squeezy-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

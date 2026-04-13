@@ -1,0 +1,12 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:03.131817+00:00",
+  "name": "twitter-algorithm-optimizer",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "twitter-algorithm-optimizer",
+  "source_repository": "composio",
+  "status": "opt_in_external"
+}

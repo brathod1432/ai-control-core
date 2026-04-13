@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:24:01.153386+00:00",
+  "name": "release-manager",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering/release-manager",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

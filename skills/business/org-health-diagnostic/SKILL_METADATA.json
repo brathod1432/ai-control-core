@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:57.020396+00:00",
+  "name": "org-health-diagnostic",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor/org-health-diagnostic",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

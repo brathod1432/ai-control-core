@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.392985+00:00",
+  "name": "contract-and-proposal-writer",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "business-growth/contract-and-proposal-writer",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

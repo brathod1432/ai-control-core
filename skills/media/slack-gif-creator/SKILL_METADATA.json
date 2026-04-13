@@ -1,0 +1,12 @@
+{
+  "category": "media",
+  "generated_at": "2026-04-13T06:24:02.180734+00:00",
+  "name": "slack-gif-creator",
+  "risk_categories": [
+    "command",
+    "network"
+  ],
+  "source_relative_path": "skills/slack-gif-creator",
+  "source_repository": "anthropic",
+  "status": "disabled_by_default"
+}

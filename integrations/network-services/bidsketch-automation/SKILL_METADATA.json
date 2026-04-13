@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:43.813524+00:00",
+  "generated_at": "2026-04-13T06:23:47.668711+00:00",
+  "location_type": "optional_integration",
+  "name": "bidsketch-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/bidsketch-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

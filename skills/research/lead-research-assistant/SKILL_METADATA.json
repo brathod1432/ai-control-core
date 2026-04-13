@@ -1,0 +1,11 @@
+{
+  "category": "research",
+  "generated_at": "2026-04-13T06:24:03.222636+00:00",
+  "name": "lead-research-assistant",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "lead-research-assistant",
+  "source_repository": "composio",
+  "status": "opt_in_external"
+}

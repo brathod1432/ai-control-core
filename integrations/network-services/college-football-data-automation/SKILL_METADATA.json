@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:43.921746+00:00",
+  "generated_at": "2026-04-13T06:23:48.637003+00:00",
+  "location_type": "optional_integration",
+  "name": "college-football-data-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/college-football-data-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

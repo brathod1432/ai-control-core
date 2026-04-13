@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.584332+00:00",
+  "generated_at": "2026-04-13T06:23:55.219374+00:00",
+  "location_type": "optional_integration",
+  "name": "verifiedemail-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/verifiedemail-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

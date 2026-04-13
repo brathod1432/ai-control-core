@@ -1,0 +1,232 @@
+[
+  {
+    "from": "skills/_templates",
+    "reason": "promote templates to neutral top-level core area",
+    "to": "templates"
+  },
+  {
+    "from": "skills/_standards",
+    "reason": "promote standards to neutral top-level core area",
+    "to": "standards"
+  },
+  {
+    "from": "skills/automation/network-integrations",
+    "reason": "isolate optional remote service integrations",
+    "to": "integrations/network-services"
+  },
+  {
+    "from": "skills/automation/connect",
+    "reason": "isolate Composio connector surface",
+    "to": "integrations/platforms/composio/connect"
+  },
+  {
+    "from": "skills/automation/connect-apps",
+    "reason": "isolate Composio app actions",
+    "to": "integrations/platforms/composio/connect-apps"
+  },
+  {
+    "from": "skills/engineering/claude-api",
+    "reason": "isolate Anthropic Claude API materials",
+    "to": "integrations/platforms/anthropic/claude-api"
+  },
+  {
+    "from": "rules/CLAUDE.md",
+    "reason": "move platform-specific runtime guide out of core rules",
+    "to": "integrations/platforms/anthropic/legacy-claude-runtime-guide.md"
+  },
+  {
+    "from": "rules/GEMINI.md",
+    "reason": "move Gemini-specific runtime guide out of core rules",
+    "to": "integrations/platforms/google/gemini-cli-guide.md"
+  },
+  {
+    "from": "agents/CLAUDE.md",
+    "reason": "move Claude-specific agent authoring guide out of core agents",
+    "to": "integrations/platforms/anthropic/agent-development-guide.md"
+  },
+  {
+    "from": "mcp/disabled-plugin-manifests/alirezarezvani.claude-marketplace.json.disabled",
+    "reason": "isolate Claude plugin metadata",
+    "to": "integrations/platforms/anthropic/claude-marketplace.json.disabled"
+  },
+  {
+    "from": "mcp/disabled-plugin-manifests/alirezarezvani.codex-plugin.json.disabled",
+    "reason": "isolate Codex plugin metadata",
+    "to": "integrations/platforms/codex/codex-plugin.json.disabled"
+  },
+  {
+    "from": "mcp/disabled-plugin-manifests/composio.connect-apps-plugin.json.disabled",
+    "reason": "isolate Composio plugin metadata",
+    "to": "integrations/platforms/composio/connect-apps-plugin.json.disabled"
+  },
+  {
+    "from": "mcp/disabled-configs/tessl.mcp.json.disabled",
+    "reason": "isolate optional MCP client config",
+    "to": "integrations/mcp-clients/tessl.mcp.json.disabled"
+  },
+  {
+    "from": "skills/business/business-growth-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/business/business-growth-skills/codex-adapter"
+  },
+  {
+    "from": "skills/business/c-level-advisor/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/business/c-level-advisor/codex-adapter"
+  },
+  {
+    "from": "skills/business/marketing-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/business/marketing-skills/codex-adapter"
+  },
+  {
+    "from": "skills/data/finance-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/data/finance-skills/codex-adapter"
+  },
+  {
+    "from": "skills/engineering/engineering-advanced-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/engineering/engineering-advanced-skills/codex-adapter"
+  },
+  {
+    "from": "skills/engineering/engineering-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/engineering/engineering-skills/codex-adapter"
+  },
+  {
+    "from": "skills/productivity/pm-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/productivity/pm-skills/codex-adapter"
+  },
+  {
+    "from": "skills/productivity/product-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/productivity/product-skills/codex-adapter"
+  },
+  {
+    "from": "skills/security/ra-qm-skills/.codex",
+    "reason": "move Codex adapter metadata out of core skills",
+    "to": "integrations/platforms/codex/skill-adapters/skills/security/ra-qm-skills/codex-adapter"
+  },
+  {
+    "from": "skills/business/business-growth-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/business/business-growth-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/business/c-level-advisor/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/business/c-level-advisor/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/business/marketing-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/business/marketing-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/data/finance-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/data/finance-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/agenthub/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/agenthub/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/autoresearch-agent/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/autoresearch-agent/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/engineering-advanced-skills/agenthub/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/engineering-advanced-skills/agenthub/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/engineering-advanced-skills/autoresearch-agent/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/engineering-advanced-skills/autoresearch-agent/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/engineering-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/engineering-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/engineering-skills/playwright-pro/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/engineering-skills/playwright-pro/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/engineering-skills/self-improving-agent/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/engineering-skills/self-improving-agent/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/playwright-pro/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/playwright-pro/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/self-improving-agent/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/engineering/self-improving-agent/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/productivity/pm-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/productivity/pm-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/productivity/product-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/productivity/product-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/security/ra-qm-skills/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "skills/security/ra-qm-skills/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "standards/operational-standards/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "standards/operational-standards/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "templates/operational-templates/CLAUDE.md",
+    "reason": "rename Claude-specific runtime file to neutral AI runtime guide",
+    "to": "templates/operational-templates/AI_RUNTIME_GUIDE.md"
+  },
+  {
+    "from": "skills/engineering/engineering-advanced-skills/llm-wiki/assets/CLAUDE.md.template",
+    "reason": "rename Claude-specific template to neutral AI runtime guide template",
+    "to": "skills/engineering/engineering-advanced-skills/llm-wiki/assets/AI_RUNTIME_GUIDE.md.template"
+  },
+  {
+    "from": "skills/engineering/llm-wiki/assets/CLAUDE.md.template",
+    "reason": "rename Claude-specific template to neutral AI runtime guide template",
+    "to": "skills/engineering/llm-wiki/assets/AI_RUNTIME_GUIDE.md.template"
+  },
+  {
+    "from": "templates/anthropic-skill-template",
+    "reason": "rename upstream-branded core template to neutral name",
+    "to": "templates/skill-template"
+  },
+  {
+    "from": "templates/composio-template-skill",
+    "reason": "move Composio-specific template to optional integration area",
+    "to": "integrations/platforms/composio/template-skill"
+  },
+  {
+    "from": "skills/engineering/llm-wiki/assets/cursorrules.template",
+    "reason": "move Cursor-specific template out of core skill assets",
+    "to": "integrations/platforms/cursor/templates/llm-wiki-cursor-rules.template"
+  },
+  {
+    "from": "skills/engineering/engineering-advanced-skills/llm-wiki/assets/cursorrules.template",
+    "reason": "move Cursor-specific template out of core skill assets",
+    "to": "integrations/platforms/cursor/templates/engineering-advanced-llm-wiki-cursor-rules.template"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.607833+00:00",
+  "name": "executive-mentor",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor/executive-mentor",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

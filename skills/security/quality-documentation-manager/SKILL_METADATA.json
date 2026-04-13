@@ -1,0 +1,12 @@
+{
+  "category": "security",
+  "generated_at": "2026-04-13T06:24:03.374394+00:00",
+  "name": "quality-documentation-manager",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "ra-qm-team/quality-documentation-manager",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

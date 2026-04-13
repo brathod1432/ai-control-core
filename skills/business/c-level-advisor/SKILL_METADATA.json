@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.097557+00:00",
+  "name": "c-level-advisor",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

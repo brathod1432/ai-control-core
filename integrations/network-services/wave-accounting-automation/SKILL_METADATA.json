@@ -1,0 +1,13 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.596819+00:00",
+  "generated_at": "2026-04-13T06:23:55.358324+00:00",
+  "location_type": "optional_integration",
+  "name": "wave-accounting-automation",
+  "risk_categories": [
+    "network"
+  ],
+  "source_relative_path": "composio-skills/wave-accounting-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

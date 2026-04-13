@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.758005+00:00",
+  "name": "marketing-ops",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "marketing-skill/marketing-ops",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

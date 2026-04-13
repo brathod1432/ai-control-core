@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.575083+00:00",
+  "name": "developer-growth-analysis",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "developer-growth-analysis",
+  "source_repository": "composio",
+  "status": "opt_in_external"
+}

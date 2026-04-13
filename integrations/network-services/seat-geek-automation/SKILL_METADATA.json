@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.446249+00:00",
+  "generated_at": "2026-04-13T06:23:53.945171+00:00",
+  "location_type": "optional_integration",
+  "name": "seat-geek-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/seat-geek-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

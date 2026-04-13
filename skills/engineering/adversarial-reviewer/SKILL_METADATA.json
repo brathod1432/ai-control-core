@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:57.746139+00:00",
+  "name": "adversarial-reviewer",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering-team/adversarial-reviewer",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

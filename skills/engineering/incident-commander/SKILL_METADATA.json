@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:24:00.556069+00:00",
+  "name": "incident-commander",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering-team/incident-commander",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

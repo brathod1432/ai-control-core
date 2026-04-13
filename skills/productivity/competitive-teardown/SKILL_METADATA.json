@@ -1,0 +1,12 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.434443+00:00",
+  "name": "competitive-teardown",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "product-team/competitive-teardown",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

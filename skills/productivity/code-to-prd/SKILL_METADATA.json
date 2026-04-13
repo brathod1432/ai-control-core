@@ -1,0 +1,13 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.406949+00:00",
+  "name": "code-to-prd",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "product-team/code-to-prd",
+  "source_repository": "alirezarezvani",
+  "status": "disabled_by_default"
+}

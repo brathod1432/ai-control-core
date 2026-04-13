@@ -1,0 +1,14 @@
+{
+  "category": "integration",
+  "generalized_at": "2026-04-13T07:50:44.319250+00:00",
+  "generated_at": "2026-04-13T06:23:52.529897+00:00",
+  "location_type": "optional_integration",
+  "name": "onesignal-user-auth-automation",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "composio-skills/onesignal-user-auth-automation",
+  "source_repository": "composio",
+  "status": "disabled_by_default"
+}

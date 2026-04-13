@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:57.219816+00:00",
+  "name": "seo-audit",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "marketing-skill/seo-audit",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

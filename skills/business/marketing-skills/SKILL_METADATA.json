@@ -1,0 +1,13 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.970159+00:00",
+  "name": "marketing-skills",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "marketing-skill",
+  "source_repository": "alirezarezvani",
+  "status": "disabled_by_default"
+}

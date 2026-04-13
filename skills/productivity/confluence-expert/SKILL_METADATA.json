@@ -1,0 +1,12 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-13T06:24:02.465868+00:00",
+  "name": "confluence-expert",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "project-management/confluence-expert",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

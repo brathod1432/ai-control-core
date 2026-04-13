@@ -1,0 +1,12 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.723640+00:00",
+  "name": "marketing-demand-acquisition",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "marketing-skill/marketing-demand-acquisition",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

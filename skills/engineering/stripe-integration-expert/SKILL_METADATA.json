@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:24:01.751341+00:00",
+  "name": "stripe-integration-expert",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering-team/stripe-integration-expert",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

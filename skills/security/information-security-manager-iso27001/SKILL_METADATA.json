@@ -1,0 +1,12 @@
+{
+  "category": "security",
+  "generated_at": "2026-04-13T06:24:03.304247+00:00",
+  "name": "information-security-manager-iso27001",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "ra-qm-team/information-security-manager-iso27001",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.315414+00:00",
+  "name": "content-creator",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "marketing-skill/content-creator",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}

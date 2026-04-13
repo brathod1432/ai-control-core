@@ -1,0 +1,12 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-13T06:23:57.731486+00:00",
+  "name": "a11y-audit",
+  "risk_categories": [
+    "network",
+    "secrets"
+  ],
+  "source_relative_path": "engineering-team/a11y-audit",
+  "source_repository": "alirezarezvani",
+  "status": "opt_in_external"
+}

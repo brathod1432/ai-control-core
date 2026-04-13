@@ -1,0 +1,1718 @@
+[
+  {
+    "kept": {
+      "category": "mcp",
+      "priority": 100,
+      "relative_path": "skills/mcp-builder",
+      "risks": {
+        "network": [
+          "api",
+          "https://",
+          "share",
+          "sync"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 9059,
+      "slug": "mcp-builder",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\mcp-builder",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "engineering",
+      "priority": 80,
+      "relative_path": "engineering/mcp-server-builder",
+      "risks": {
+        "network": [
+          "api",
+          "browser",
+          "share"
+        ],
+        "secrets": [
+          "auth",
+          "secret"
+        ]
+      },
+      "size": 5734,
+      "slug": "mcp-builder",
+      "source": "alirezarezvani",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\engineering\\mcp-server-builder",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "mcp-builder"
+  },
+  {
+    "kept": {
+      "category": "productivity",
+      "priority": 100,
+      "relative_path": "skills/brand-guidelines",
+      "risks": {},
+      "size": 2235,
+      "slug": "brand-guidelines",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\brand-guidelines",
+      "status": "active_local"
+    },
+    "merged_from": {
+      "category": "business",
+      "priority": 80,
+      "relative_path": "marketing-skill/brand-guidelines",
+      "risks": {
+        "network": [
+          "api",
+          "email",
+          "share"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 5333,
+      "slug": "brand-guidelines",
+      "source": "alirezarezvani",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\marketing-skill\\brand-guidelines",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "brand-guidelines"
+  },
+  {
+    "kept": {
+      "category": "media",
+      "priority": 100,
+      "relative_path": "skills/web-artifacts-builder",
+      "risks": {
+        "network": [
+          "https://",
+          "share"
+        ]
+      },
+      "size": 3073,
+      "slug": "web-artifacts-builder",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\web-artifacts-builder",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "media",
+      "priority": 70,
+      "relative_path": "artifacts-builder",
+      "risks": {
+        "network": [
+          "https://",
+          "share"
+        ]
+      },
+      "size": 3065,
+      "slug": "web-artifacts-builder",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\artifacts-builder",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "web-artifacts-builder"
+  },
+  {
+    "kept": {
+      "category": "productivity",
+      "priority": 100,
+      "relative_path": "skills/brand-guidelines",
+      "risks": {},
+      "size": 2235,
+      "slug": "brand-guidelines",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\brand-guidelines",
+      "status": "active_local"
+    },
+    "merged_from": {
+      "category": "productivity",
+      "priority": 70,
+      "relative_path": "brand-guidelines",
+      "risks": {},
+      "size": 2235,
+      "slug": "brand-guidelines",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\brand-guidelines",
+      "status": "active_local"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "brand-guidelines"
+  },
+  {
+    "kept": {
+      "category": "media",
+      "priority": 100,
+      "relative_path": "skills/canvas-design",
+      "risks": {
+        "network": [
+          "download"
+        ]
+      },
+      "size": 11937,
+      "slug": "canvas-design",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\canvas-design",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "media",
+      "priority": 70,
+      "relative_path": "canvas-design",
+      "risks": {
+        "network": [
+          "download"
+        ]
+      },
+      "size": 11937,
+      "slug": "canvas-design",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\canvas-design",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "canvas-design"
+  },
+  {
+    "kept": {
+      "category": "engineering",
+      "priority": 80,
+      "relative_path": "engineering/changelog-generator",
+      "risks": {
+        "network": [
+          "api"
+        ]
+      },
+      "size": 4963,
+      "slug": "changelog-generator",
+      "source": "alirezarezvani",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\alirezarezvani-claude-skills\\claude-skills-main\\engineering\\changelog-generator",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "writing",
+      "priority": 70,
+      "relative_path": "changelog-generator",
+      "risks": {
+        "network": [
+          "email",
+          "sync",
+          "upload"
+        ]
+      },
+      "size": 3086,
+      "slug": "changelog-generator",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\changelog-generator",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "changelog-generator"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/anthropic-administrator-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 3096,
+      "slug": "anthropic-administrator-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\anthropic-administrator-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/anthropic_administrator-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4298,
+      "slug": "anthropic-administrator-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\anthropic_administrator-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "anthropic-administrator-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/capsule-crm-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "email",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 7651,
+      "slug": "capsule-crm-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\capsule-crm-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/capsule_crm-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4166,
+      "slug": "capsule-crm-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\capsule_crm-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "capsule-crm-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/docker-hub-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "email",
+          "https://",
+          "webhook",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4766,
+      "slug": "docker-hub-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\docker-hub-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/docker_hub-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4144,
+      "slug": "docker-hub-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\docker_hub-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "docker-hub-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/fillout-forms-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 2962,
+      "slug": "fillout-forms-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\fillout-forms-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/fillout_forms-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4104,
+      "slug": "fillout-forms-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\fillout_forms-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "fillout-forms-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google-admin-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "email",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 6921,
+      "slug": "google-admin-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google-admin-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google_admin-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4184,
+      "slug": "google-admin-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google_admin-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "google-admin-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google-classroom-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 3055,
+      "slug": "google-classroom-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google-classroom-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google_classroom-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4274,
+      "slug": "google-classroom-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google_classroom-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "google-classroom-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google-maps-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth"
+        ]
+      },
+      "size": 7441,
+      "slug": "google-maps-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google-maps-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google_maps-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4166,
+      "slug": "google-maps-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google_maps-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "google-maps-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google-search-console-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "ssh"
+        ]
+      },
+      "size": 7052,
+      "slug": "google-search-console-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google-search-console-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/google_search_console-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4372,
+      "slug": "google-search-console-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\google_search_console-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "google-search-console-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/lemon-squeezy-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "email",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth"
+        ]
+      },
+      "size": 5801,
+      "slug": "lemon-squeezy-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\lemon-squeezy-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/lemon_squeezy-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4204,
+      "slug": "lemon-squeezy-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\lemon_squeezy-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "lemon-squeezy-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/many-chat-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 2942,
+      "slug": "many-chat-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\many-chat-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/many_chat-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4118,
+      "slug": "many-chat-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\many_chat-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "many-chat-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/microsoft-clarity-automation",
+      "risks": {
+        "network": [
+          "browser",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 5467,
+      "slug": "microsoft-clarity-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\microsoft-clarity-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/microsoft_clarity-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4276,
+      "slug": "microsoft-clarity-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\microsoft_clarity-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "microsoft-clarity-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/mistral-ai-automation",
+      "risks": {
+        "exfiltration": [
+          "upload files"
+        ],
+        "network": [
+          "api",
+          "composio",
+          "download",
+          "https://",
+          "sync",
+          "upload",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth"
+        ]
+      },
+      "size": 5046,
+      "slug": "mistral-ai-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\mistral-ai-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/mistral_ai-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4138,
+      "slug": "mistral-ai-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\mistral_ai-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "mistral-ai-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/new-relic-automation",
+      "risks": {
+        "network": [
+          "api",
+          "browser",
+          "composio",
+          "email",
+          "https://",
+          "slack",
+          "webhook",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth"
+        ]
+      },
+      "size": 5461,
+      "slug": "new-relic-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\new-relic-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/new_relic-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4138,
+      "slug": "new-relic-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\new_relic-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "new-relic-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/onesignal-rest-api-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 3013,
+      "slug": "onesignal-rest-api-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\onesignal-rest-api-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/onesignal_rest_api-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4182,
+      "slug": "onesignal-rest-api-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\onesignal_rest_api-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "onesignal-rest-api-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/similarweb-digitalrank-api-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 3077,
+      "slug": "similarweb-digitalrank-api-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\similarweb-digitalrank-api-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/similarweb_digitalrank_api-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4266,
+      "slug": "similarweb-digitalrank-api-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\similarweb_digitalrank_api-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "similarweb-digitalrank-api-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/wave-accounting-automation",
+      "risks": {
+        "network": [
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ]
+      },
+      "size": 1563,
+      "slug": "wave-accounting-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\wave-accounting-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/wave_accounting-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4242,
+      "slug": "wave-accounting-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\wave_accounting-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "wave-accounting-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho-bigin-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 2965,
+      "slug": "zoho-bigin-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho-bigin-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho_bigin-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4150,
+      "slug": "zoho-bigin-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho_bigin-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "zoho-bigin-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho-books-automation",
+      "risks": {
+        "network": [
+          "composio",
+          "email",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 8449,
+      "slug": "zoho-books-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho-books-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho_books-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4130,
+      "slug": "zoho-books-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho_books-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "zoho-books-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho-desk-automation",
+      "risks": {
+        "network": [
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ]
+      },
+      "size": 2409,
+      "slug": "zoho-desk-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho-desk-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho_desk-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4130,
+      "slug": "zoho-desk-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho_desk-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "zoho-desk-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho-inventory-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 3025,
+      "slug": "zoho-inventory-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho-inventory-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho_inventory-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4218,
+      "slug": "zoho-inventory-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho_inventory-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "zoho-inventory-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho-invoice-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 2995,
+      "slug": "zoho-invoice-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho-invoice-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho_invoice-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4182,
+      "slug": "zoho-invoice-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho_invoice-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "zoho-invoice-automation"
+  },
+  {
+    "kept": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho-mail-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "https://",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 2950,
+      "slug": "zoho-mail-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho-mail-automation",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "automation/network-integrations",
+      "priority": 70,
+      "relative_path": "composio-skills/zoho_mail-automation",
+      "risks": {
+        "network": [
+          "api",
+          "composio",
+          "email",
+          "https://",
+          "sync",
+          "composio integration catalog"
+        ],
+        "secrets": [
+          "api key",
+          "auth",
+          "token"
+        ]
+      },
+      "size": 4110,
+      "slug": "zoho-mail-automation",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\composio-skills\\zoho_mail-automation",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "zoho-mail-automation"
+  },
+  {
+    "kept": {
+      "category": "data",
+      "priority": 100,
+      "relative_path": "skills/docx",
+      "risks": {
+        "command": [
+          "npm install"
+        ],
+        "network": [
+          "https://",
+          "sync"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 20056,
+      "slug": "docx",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\docx",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "data",
+      "priority": 70,
+      "relative_path": "document-skills/docx",
+      "risks": {
+        "command": [
+          "npm install",
+          "pip install",
+          "sudo "
+        ],
+        "network": [
+          "api"
+        ]
+      },
+      "size": 10150,
+      "slug": "docx",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\document-skills\\docx",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "docx"
+  },
+  {
+    "kept": {
+      "category": "data",
+      "priority": 100,
+      "relative_path": "skills/pdf",
+      "risks": {
+        "command": [
+          "pip install"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 8035,
+      "slug": "pdf",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\pdf",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "data",
+      "priority": 70,
+      "relative_path": "document-skills/pdf",
+      "risks": {
+        "command": [
+          "pip install"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 7068,
+      "slug": "pdf",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\document-skills\\pdf",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "pdf"
+  },
+  {
+    "kept": {
+      "category": "data",
+      "priority": 100,
+      "relative_path": "skills/pptx",
+      "risks": {
+        "command": [
+          "npm install",
+          "pip install"
+        ],
+        "network": [
+          "email"
+        ]
+      },
+      "size": 9128,
+      "slug": "pptx",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\pptx",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "data",
+      "priority": 70,
+      "relative_path": "document-skills/pptx",
+      "risks": {
+        "command": [
+          "npm install",
+          "pip install",
+          "sudo "
+        ],
+        "network": [
+          "api"
+        ]
+      },
+      "size": 25533,
+      "slug": "pptx",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\document-skills\\pptx",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "pptx"
+  },
+  {
+    "kept": {
+      "category": "data",
+      "priority": 100,
+      "relative_path": "skills/xlsx",
+      "risks": {
+        "network": [
+          "api",
+          "download"
+        ]
+      },
+      "size": 11455,
+      "slug": "xlsx",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\xlsx",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "data",
+      "priority": 70,
+      "relative_path": "document-skills/xlsx",
+      "risks": {},
+      "size": 10628,
+      "slug": "xlsx",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\document-skills\\xlsx",
+      "status": "active_local"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "xlsx"
+  },
+  {
+    "kept": {
+      "category": "writing",
+      "priority": 100,
+      "relative_path": "skills/internal-comms",
+      "risks": {},
+      "size": 1511,
+      "slug": "internal-comms",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\internal-comms",
+      "status": "active_local"
+    },
+    "merged_from": {
+      "category": "writing",
+      "priority": 70,
+      "relative_path": "internal-comms",
+      "risks": {},
+      "size": 1511,
+      "slug": "internal-comms",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\internal-comms",
+      "status": "active_local"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "internal-comms"
+  },
+  {
+    "kept": {
+      "category": "mcp",
+      "priority": 100,
+      "relative_path": "skills/mcp-builder",
+      "risks": {
+        "network": [
+          "api",
+          "https://",
+          "share",
+          "sync"
+        ],
+        "secrets": [
+          "auth"
+        ]
+      },
+      "size": 9059,
+      "slug": "mcp-builder",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\mcp-builder",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "mcp",
+      "priority": 70,
+      "relative_path": "mcp-builder",
+      "risks": {
+        "network": [
+          "api",
+          "https://",
+          "share",
+          "sync"
+        ],
+        "secrets": [
+          "auth",
+          "token"
+        ]
+      },
+      "size": 13511,
+      "slug": "mcp-builder",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\mcp-builder",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "mcp-builder"
+  },
+  {
+    "kept": {
+      "category": "productivity",
+      "priority": 100,
+      "relative_path": "skills/skill-creator",
+      "risks": {
+        "command": [
+          "subprocess"
+        ],
+        "network": [
+          "browser",
+          "download",
+          "share"
+        ],
+        "secrets": [
+          "auth",
+          "token"
+        ]
+      },
+      "size": 32987,
+      "slug": "skill-creator",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\skill-creator",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "productivity",
+      "priority": 70,
+      "relative_path": "skill-creator",
+      "risks": {
+        "network": [
+          "api",
+          "share"
+        ],
+        "secrets": [
+          "token"
+        ]
+      },
+      "size": 11477,
+      "slug": "skill-creator",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\skill-creator",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "skill-creator"
+  },
+  {
+    "kept": {
+      "category": "media",
+      "priority": 100,
+      "relative_path": "skills/slack-gif-creator",
+      "risks": {
+        "command": [
+          "pip install"
+        ],
+        "network": [
+          "slack",
+          "upload"
+        ]
+      },
+      "size": 7841,
+      "slug": "slack-gif-creator",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\slack-gif-creator",
+      "status": "disabled_by_default"
+    },
+    "merged_from": {
+      "category": "media",
+      "priority": 70,
+      "relative_path": "slack-gif-creator",
+      "risks": {
+        "command": [
+          "pip install"
+        ],
+        "network": [
+          "slack",
+          "upload"
+        ]
+      },
+      "size": 17056,
+      "slug": "slack-gif-creator",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\slack-gif-creator",
+      "status": "disabled_by_default"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "slack-gif-creator"
+  },
+  {
+    "kept": {
+      "category": "media",
+      "priority": 100,
+      "relative_path": "skills/theme-factory",
+      "risks": {},
+      "size": 3124,
+      "slug": "theme-factory",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\theme-factory",
+      "status": "active_local"
+    },
+    "merged_from": {
+      "category": "media",
+      "priority": 70,
+      "relative_path": "theme-factory",
+      "risks": {},
+      "size": 3124,
+      "slug": "theme-factory",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\theme-factory",
+      "status": "active_local"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "theme-factory"
+  },
+  {
+    "kept": {
+      "category": "engineering",
+      "priority": 100,
+      "relative_path": "skills/webapp-testing",
+      "risks": {
+        "network": [
+          "api",
+          "browser",
+          "http://",
+          "sync"
+        ]
+      },
+      "size": 3861,
+      "slug": "webapp-testing",
+      "source": "anthropic",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\anthropic-skills\\skills-main\\skills\\webapp-testing",
+      "status": "opt_in_external"
+    },
+    "merged_from": {
+      "category": "engineering",
+      "priority": 70,
+      "relative_path": "webapp-testing",
+      "risks": {
+        "network": [
+          "api",
+          "browser",
+          "http://",
+          "sync"
+        ]
+      },
+      "size": 3861,
+      "slug": "webapp-testing",
+      "source": "composio",
+      "source_path": "C:\\Users\\kbrat\\AppData\\Local\\Temp\\ai-control-core-import-20260413033210\\awesome-claude-skills\\awesome-claude-skills-master\\webapp-testing",
+      "status": "opt_in_external"
+    },
+    "reason": "same canonical slug or known alias; higher-priority safer source retained",
+    "slug": "webapp-testing"
+  }
+]

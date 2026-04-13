@@ -1,0 +1,11 @@
+{
+  "category": "business",
+  "generated_at": "2026-04-13T06:23:56.675900+00:00",
+  "name": "intl-expansion",
+  "risk_categories": [
+    "secrets"
+  ],
+  "source_relative_path": "c-level-advisor/intl-expansion",
+  "source_repository": "alirezarezvani",
+  "status": "active_local"
+}
