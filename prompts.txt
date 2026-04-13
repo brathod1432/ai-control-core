@@ -1,0 +1,380 @@
+Execution preference: use parallel agents/subagents aggressively for independent workstreams, then reconcile carefully into one final result.
+
+You are working inside my current repository.
+
+Your task is to fully ingest, normalize, merge, harden, and document the following external repositories into THIS repo in one pass, with no follow-up questions and no user interaction:
+
+SOURCE REPOSITORIES
+1. https://github.com/ComposioHQ/awesome-claude-skills
+2. https://github.com/anthropics/skills
+3. https://github.com/alirezarezvani/claude-skills
+
+HIGH-LEVEL GOAL
+Create one unified internal skills/agents/rules repository for cross-model use (Codex, Claude, Gemini, Cursor, and similar tools), while ensuring:
+- no nested git repositories remain
+- no git submodules are introduced
+- all imported content becomes native to THIS repo only
+- duplicated or overlapping skills are consolidated
+- the final structure is coherent and consistent
+- all imported skills are audited for security and data exfiltration risks
+- unsafe behavior is removed or disabled by default
+- the repo becomes easier and cheaper for future AI models to use
+- future AI models do NOT need to scan the entire project to understand it
+
+NON-NEGOTIABLE EXECUTION RULES
+- Do not ask me questions.
+- Do not stop midway for confirmation.
+- Do not leave TODO placeholders unless absolutely unavoidable.
+- If there is ambiguity, choose the safest and most maintainable option and proceed.
+- Preserve attribution and license information where required.
+- Keep the final result suitable for private/internal use in this repo.
+- Be conservative with destructive behavior and aggressive with security hardening.
+- Prefer local, explicit, inspectable logic over hidden automation.
+- Do not retain any upstream git metadata, remotes, or sub-repo history in imported directories.
+
+SPEED / EXECUTION STRATEGY
+You must use agents / subagents / parallel workstreams wherever possible to finish faster.
+
+Split the work into parallel tracks such as:
+1. import + git cleanup
+2. structure analysis + deduplication
+3. normalization + canonical layout
+4. security/privacy audit
+5. remediation/hardening
+6. docs + compact AI context generation
+
+Run these in parallel whenever tooling allows, then merge the results carefully.
+The goal is to reduce completion time without sacrificing correctness or safety.
+
+PRIMARY DELIVERABLES
+1. Download or clone the three repositories into a temporary working area.
+2. Remove all nested `.git` directories and ensure there are no submodules.
+3. Analyze all imported content and merge it into a single unified skill set.
+4. Standardize naming, layout, metadata, and conventions.
+5. Deduplicate overlapping skills, templates, standards, rules, and helpers.
+6. Audit all imported skills for security/privacy issues.
+7. Modify or disable unsafe skills.
+8. Produce a final documentation set describing:
+   - what was imported
+   - what was merged
+   - what was removed
+   - what was renamed
+   - what was hardened
+   - what remains disabled and why
+9. Create a compact markdown knowledge file for future AI usage so models can answer accurately with fewer tokens and without scanning the whole project.
+
+TARGET OUTCOME
+I do NOT want 3 separate imported collections living side by side.
+I want one coherent internal platform for:
+- skills
+- agent instructions
+- reusable rules
+- standards
+- templates
+- MCP-related helpers/builders
+- security review assets
+- tests/validation where useful
+- compact AI-readable knowledge/context files
+
+DESIRED FINAL REPO SHAPE
+Create a single normalized top-level structure similar to this, adjusting if needed for correctness:
+
+/agents
+/rules
+/skills
+/skills/_shared
+/skills/_templates
+/skills/_standards
+/skills/_tests
+/mcp
+/security
+/scripts
+/docs
+/context
+
+You may refine this structure if a better organization emerges, but the end state must be unified and easy to navigate.
+
+MERGE AND NORMALIZATION REQUIREMENTS
+
+A. IMPORT STRATEGY
+- Bring all useful content from the 3 source repositories into this repository.
+- Use a temporary import workspace if helpful, but do not leave messy staging artifacts behind.
+- Do not preserve the external repositories as standalone folders long-term unless strictly needed for traceability in docs only.
+- Final content must feel like one repo, not three pasted repos.
+
+B. DEDUPLICATION
+- Detect duplicate or near-duplicate skills by:
+  - folder name
+  - functionality
+  - README/instruction similarity
+  - overlapping purpose
+- For duplicates:
+  - keep the best maintained / most complete / most secure version
+  - merge useful differences from the others
+  - preserve attribution in docs
+- Where two skills are similar but not identical, consolidate into one canonical skill with merged documentation and merged safe behavior.
+
+C. STANDARDIZATION
+Normalize across all imported content:
+- directory naming
+- file naming
+- README structure
+- instruction format
+- manifest/config shape where applicable
+- examples
+- metadata
+- test placement
+- helper scripts
+- dependency declarations
+- command usage examples
+
+If multiple skill formats exist, define one canonical internal standard and migrate imported content toward it.
+
+D. CANONICAL CLASSIFICATION
+Reclassify imported items into unified buckets such as:
+- engineering
+- productivity
+- writing
+- research
+- media
+- data
+- security
+- business
+- automation
+- MCP
+- templates
+- standards
+- shared utilities
+
+Do not preserve inconsistent upstream categorization if it makes the merged repo harder to use.
+
+SECURITY AND PRIVACY AUDIT REQUIREMENTS
+
+This is a critical part of the task.
+
+You must audit every imported skill, template, script, agent instruction, config, plugin, and helper for security/privacy risks.
+
+Specifically detect and review:
+
+1. DATA EXFILTRATION RISK
+- sending local repo data to remote APIs or external services
+- copying repository files into prompts without clear boundaries
+- uploading code, secrets, configs, credentials, env files, tokens, SSH keys, certs, or proprietary docs
+- implicit “share project context” behavior
+- telemetry or analytics that send local content externally
+- hidden curl/wget/webhook/post requests
+- silent browser/API automation that exports internal content
+- MCP or plugin behavior that transmits project data outside the repo
+
+2. SECRET HANDLING RISK
+- reading `.env`, key files, credentials, cloud config, token stores, auth caches
+- logging sensitive values
+- embedding secrets in examples or defaults
+- unsafe shell command patterns
+- dangerous environment variable exposure
+
+3. COMMAND EXECUTION RISK
+- arbitrary shell execution
+- destructive file operations
+- privilege escalation
+- unsafe install scripts
+- remote code fetch and execute patterns
+- insecure subprocess usage
+
+4. NETWORK / INTEGRATION RISK
+- default-on network calls
+- undocumented third-party endpoints
+- Composio or similar connectors that could transmit data externally
+- remote MCP usage that can access project content
+- connectors/plugins that perform actions outside local scope
+
+5. PROMPT / INSTRUCTION RISK
+- instructions telling the model to disclose full project files
+- instructions encouraging copying large codebases into chat
+- hidden “always send context” patterns
+- unsafe default behavior around external tools
+
+SECURITY REMEDIATION RULES
+For anything risky:
+- harden it
+- sandbox it
+- disable by default
+- require explicit opt-in
+- document the risk clearly
+- remove functionality if it cannot be made safe
+
+Safe-by-default requirements:
+- no skill should transmit repository data externally unless clearly opt-in and documented
+- no skill should read secrets by default
+- no skill should export project files by default
+- no skill should call remote endpoints silently
+- no skill should auto-install untrusted dependencies
+- no skill should auto-execute destructive commands
+
+When modifying risky skills:
+- preserve useful local behavior
+- strip unsafe defaults
+- add guardrails and confirmation requirements
+- add clear comments and documentation
+- prefer environment-agnostic local-only operation where possible
+
+SPECIAL ATTENTION AREAS
+Be extra careful with:
+- plugin directories
+- connect-app / app automation integrations
+- MCP server builders / MCP configs
+- downloader/uploader skills
+- browser automation
+- Slack/email/posting/integration skills
+- any tool that can access or send repository content externally
+- any “share”, “sync”, “publish”, “connect”, “upload”, “send”, “post”, “fetch remote”, or “generate from repo” feature
+
+GIT CLEANUP REQUIREMENTS
+- Remove all imported nested `.git` folders.
+- Remove or rewrite any `.gitmodules` references.
+- Remove upstream remote config remnants.
+- Ensure imported content is plain directories/files in THIS repo only.
+- Do not preserve nested repo state.
+- If there are badges, links, or docs assuming standalone repo identity, update them as needed for this merged internal repo.
+
+LICENSE / ATTRIBUTION REQUIREMENTS
+- Preserve required license notices.
+- Create a `docs/THIRD_PARTY_ATTRIBUTION.md` file summarizing:
+  - source repository
+  - imported areas
+  - license references
+  - major modifications
+- Do not copy upstream branding in a misleading way.
+- Make it clear the merged result is an internally unified derivative aggregation.
+
+QUALITY BAR
+The end result must:
+- be understandable without upstream repo knowledge
+- have one consistent structure
+- avoid duplicated clutter
+- have clear README/docs
+- include a security audit report
+- include a merge report
+- include a disabled-or-hardened features list
+- be maintainable by one team from this repo alone
+- be optimized for low-token AI usage in future interactions
+
+LOW-TOKEN AI CONTEXT REQUIREMENTS
+Create compact markdown files for future AI usage so other models do not need to inspect the full project every time.
+
+At minimum create:
+
+/context/AI_PROJECT_CONTEXT.md
+/context/SKILLS_INDEX.md
+/context/SECURITY_BOUNDARIES.md
+/context/USAGE_RULES.md
+
+Purpose of these files:
+- give future AI models a compact map of the repo
+- reduce token usage
+- improve response accuracy
+- avoid repeated full-repo scanning
+- summarize what exists, where it is, and what is safe to use
+
+Requirements for these files:
+1. Keep them concise, high-signal, and structured for machine reading.
+2. Prefer bullet points, short sections, and canonical paths.
+3. Do not duplicate full READMEs.
+4. Summarize only the most useful operational knowledge.
+5. Explicitly include:
+   - project purpose
+   - folder map
+   - canonical conventions
+   - skill categories
+   - naming rules
+   - which files are source of truth
+   - security boundaries
+   - what is disabled by default
+   - what requires explicit opt-in
+6. Include a “START HERE” section for AI models.
+7. Include a “DO NOT ASSUME” section to prevent hallucinations.
+8. Include a “SAFE DEFAULTS” section.
+9. Include a “CHEAPEST FILES TO READ FIRST” section so models know what to read before exploring deeper.
+10. Optimize for token efficiency over prose style.
+
+Also create a root-level pointer file if useful, such as:
+- `/AI_README.md`
+or
+- `/MODEL_CONTEXT.md`
+
+This root file should direct future AI systems to the compact context files first.
+
+EXPECTED FILES TO PRODUCE
+At minimum, create/update:
+
+/README.md
+/docs/MERGE_REPORT.md
+/docs/SECURITY_AUDIT_REPORT.md
+/docs/THIRD_PARTY_ATTRIBUTION.md
+/docs/REPO_STRUCTURE.md
+/security/SECURITY_POLICY.md
+/context/AI_PROJECT_CONTEXT.md
+/context/SKILLS_INDEX.md
+/context/SECURITY_BOUNDARIES.md
+/context/USAGE_RULES.md
+
+If useful, also create:
+- `/AI_README.md`
+- `/scripts/audit_skills.py`
+- `/scripts/normalize_skills.py`
+- `/scripts/find_duplicates.py`
+- `/scripts/build_context_index.py`
+
+REPORTING REQUIREMENTS
+In your final output after making changes, provide:
+1. Summary of what was imported
+2. Final folder structure
+3. Duplicate/consolidation decisions
+4. Security issues found
+5. Exact remediations applied
+6. Anything disabled and why
+7. Compact-context files created for future AI usage
+8. Any residual manual follow-up worth considering
+
+IMPLEMENTATION PREFERENCES
+- Favor Python 3.11 for local audit/normalization/context-generation scripts if scripting is needed.
+- Keep scripts deterministic and readable.
+- Use only safe, mainstream dependencies; avoid unnecessary new dependencies.
+- Prefer no dependency if standard library is sufficient.
+- Update documentation in parallel with code/file changes.
+
+DECISION CRITERIA FOR CHOOSING BETWEEN DUPLICATES
+When multiple versions of a skill exist, prefer the version that is:
+1. safer
+2. more complete
+3. more maintainable
+4. more generic/reusable
+5. better documented
+6. less dependent on external services by default
+
+If the “best” version is less safe, harden it before keeping it.
+
+ABSOLUTE PROHIBITIONS
+- No nested git repos
+- No git submodules
+- No silent external data sharing
+- No silent network exfiltration
+- No default-on remote actions using repo content
+- No keeping three separate skill libraries as-is
+- No incomplete merge that leaves the repo fragmented
+- No bloated AI context files that waste tokens
+
+WORK STYLE
+Execute the full task end-to-end in one run:
+- inspect
+- import
+- parallelize with agents/subagents
+- merge
+- normalize
+- audit
+- harden
+- document
+- generate compact AI context
+- summarize
+
+Do not ask me to confirm anything. Make the best safe engineering decisions and finish the task.
