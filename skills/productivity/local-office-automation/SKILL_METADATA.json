@@ -1,0 +1,14 @@
+{
+  "category": "productivity",
+  "generated_at": "2026-04-28T00:00:00+02:00",
+  "name": "local-office-automation",
+  "risk_categories": [
+    "command",
+    "secrets",
+    "privacy",
+    "local_application_state"
+  ],
+  "source_relative_path": "productivity/local-office-automation",
+  "source_repository": "local",
+  "status": "active_local"
+}

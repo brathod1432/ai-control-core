@@ -1,0 +1,16 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-28T00:00:00+02:00",
+  "name": "claude-certified-architect-course",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets",
+    "privacy",
+    "agent_autonomy",
+    "local_file_changes"
+  ],
+  "source_relative_path": "engineering/claude-certified-architect-course",
+  "source_repository": "local",
+  "status": "active_local"
+}

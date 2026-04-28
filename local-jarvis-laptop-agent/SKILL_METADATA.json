@@ -1,0 +1,18 @@
+{
+  "category": "local-agent",
+  "generated_at": "2026-04-28T00:00:00+02:00",
+  "name": "local-jarvis-laptop-agent",
+  "risk_categories": [
+    "command",
+    "network",
+    "secrets",
+    "privacy",
+    "desktop_automation",
+    "browser_automation",
+    "local_app_state",
+    "agent_autonomy"
+  ],
+  "source_relative_path": "local-jarvis-laptop-agent",
+  "source_repository": "local",
+  "status": "active_local"
+}

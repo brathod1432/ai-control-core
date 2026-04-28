@@ -1,0 +1,14 @@
+{
+  "category": "engineering",
+  "generated_at": "2026-04-28T00:00:00+02:00",
+  "name": "local-browser-playwright-cdp",
+  "risk_categories": [
+    "browser_automation",
+    "local_network_loopback",
+    "secrets",
+    "screenshots"
+  ],
+  "source_relative_path": "engineering/local-browser-playwright-cdp",
+  "source_repository": "local",
+  "status": "active_local"
+}

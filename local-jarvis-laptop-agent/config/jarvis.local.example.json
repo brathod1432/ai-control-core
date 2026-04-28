@@ -1,0 +1,44 @@
+{
+  "runtime": {
+    "provider": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "chat_endpoint": "/api/chat",
+    "default_model": "qwen-local",
+    "profiles": {
+      "fast": {
+        "model": "qwen-small-local",
+        "temperature": 0.1,
+        "max_tokens": 1024
+      },
+      "balanced": {
+        "model": "qwen-balanced-local",
+        "temperature": 0.2,
+        "max_tokens": 4096
+      },
+      "coder": {
+        "model": "qwen-coder-local",
+        "temperature": 0.1,
+        "max_tokens": 4096
+      }
+    }
+  },
+  "permissions": {
+    "network_default": "deny",
+    "shell_default": "ask",
+    "desktop_control_default": "ask",
+    "memory_write_default": "ask",
+    "high_impact_default": "deny"
+  },
+  "storage": {
+    "memory_dir": "%USERPROFILE%/.local-jarvis/memory",
+    "log_dir": "%USERPROFILE%/.local-jarvis/logs",
+    "artifact_dir": "%USERPROFILE%/.local-jarvis/artifacts"
+  },
+  "voice": {
+    "enabled": false,
+    "mode": "push_to_talk",
+    "stt": "local",
+    "tts": "local",
+    "show_transcript_before_action": true
+  }
+}

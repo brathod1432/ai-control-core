@@ -1,0 +1,64 @@
+{
+  "agents": [
+    {
+      "name": "jarvis-core",
+      "role": "coordinator",
+      "autonomy_level": 1,
+      "owns": ["intent routing", "safety gate", "final response"],
+      "tools": ["local_model_chat", "memory_search", "audit_log"]
+    },
+    {
+      "name": "jarvis-coder",
+      "role": "coding specialist",
+      "autonomy_level": 2,
+      "owns": ["scoped code changes"],
+      "tools": ["file_read", "search", "apply_patch", "test_runner"]
+    },
+    {
+      "name": "jarvis-browser",
+      "role": "local browser inspector",
+      "autonomy_level": 1,
+      "owns": ["approved local Chrome/CDP inspection"],
+      "tools": ["cdp_list_tabs", "cdp_screenshot", "cdp_dom_summary"]
+    },
+    {
+      "name": "jarvis-verifier",
+      "role": "critic and QA",
+      "autonomy_level": 1,
+      "owns": ["validation and risk review"],
+      "tools": ["file_read", "test_runner", "checklist"]
+    }
+  ],
+  "tools": [
+    {
+      "name": "local_model_chat",
+      "permission": "read_local",
+      "side_effects": false,
+      "approval_required": false
+    },
+    {
+      "name": "file_read",
+      "permission": "read_local",
+      "side_effects": false,
+      "approval_required": false
+    },
+    {
+      "name": "apply_patch",
+      "permission": "write_local",
+      "side_effects": true,
+      "approval_required": "scope_required"
+    },
+    {
+      "name": "shell_command",
+      "permission": "execute_local",
+      "side_effects": true,
+      "approval_required": true
+    },
+    {
+      "name": "external_network",
+      "permission": "network",
+      "side_effects": true,
+      "approval_required": true
+    }
+  ]
+}
