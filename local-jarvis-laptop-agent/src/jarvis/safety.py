@@ -120,7 +120,8 @@ _WRITE_TERMS = (
     "replace",
 )
 _EXECUTE_TERMS = (
-    "run",
+    "run ",
+    "run:",
     "execute",
     "launch",
     "start process",
@@ -136,13 +137,17 @@ _EXECUTE_TERMS = (
 )
 _AUTOMATION_TERMS = (
     "click",
-    "type",
     "press",
     "fill",
     "submit",
     "browser",
     "chrome",
+    "cdp",
     "edge",
+    "screenshot",
+    "screen capture",
+    "active window",
+    "desktop",
     "word",
     "excel",
     "powerpoint",
@@ -151,6 +156,8 @@ _AUTOMATION_TERMS = (
     "ui",
 )
 _INSPECT_TERMS = (
+    "analyze",
+    "analyse",
     "read",
     "inspect",
     "show",
@@ -158,8 +165,15 @@ _INSPECT_TERMS = (
     "find",
     "search",
     "scan",
+    "summary",
+    "summarize",
+    "summarise",
     "summarize file",
+    "overview",
     "look at",
+    "go through",
+    "what is this project",
+    "what this project is about",
 )
 _RECALL_TERMS = ("remember", "recall", "memory", "what did we", "what was")
 _PLAN_TERMS = ("plan", "outline", "strategy", "steps", "roadmap", "schedule")
@@ -176,12 +190,12 @@ def classify_intent(text: str) -> Intent:
         return Intent.HIGH_IMPACT
     if _is_external(normalized):
         return Intent.EXTERNAL
+    if _contains_any(normalized, _INSPECT_TERMS):
+        return Intent.INSPECT
     if _contains_any(normalized, _AUTOMATION_TERMS):
         return Intent.AUTOMATE
     if _contains_any(normalized, _EXECUTE_TERMS) or _contains_any(normalized, _WRITE_TERMS):
         return Intent.ACT
-    if _contains_any(normalized, _INSPECT_TERMS):
-        return Intent.INSPECT
     if _contains_any(normalized, _RECALL_TERMS):
         return Intent.RECALL
     if _contains_any(normalized, _PLAN_TERMS):
@@ -311,7 +325,16 @@ def _normalize(text: str) -> str:
 
 
 def _contains_any(text: str, terms: Iterable[str]) -> bool:
-    return any(term in text for term in terms)
+    for term in terms:
+        if not term:
+            continue
+        if term[0].isalnum() and term[-1].isalnum():
+            if re.search(rf"(?<!\w){re.escape(term)}(?!\w)", text):
+                return True
+            continue
+        if term in text:
+            return True
+    return False
 
 
 def _is_external(text: str) -> bool:

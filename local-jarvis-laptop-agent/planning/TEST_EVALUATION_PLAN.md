@@ -1,5 +1,9 @@
 # Test And Evaluation Plan
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are valid test targets by default.
+
 ## 1. Testing Philosophy
 
 Jarvis must be tested as both software and an autonomous-ish assistant. Normal unit tests are necessary but not sufficient. The project needs:
@@ -307,4 +311,3 @@ Model:
 ## Approval
 - Ready for next milestone: yes/no
 ```
-

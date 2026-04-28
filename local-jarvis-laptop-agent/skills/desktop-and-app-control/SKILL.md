@@ -13,6 +13,10 @@ category: local-agent
 
 # Desktop And App Control
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are used; browser, app, screenshot, and desktop-control workers are prompts over this same model.
+
 ## Capability Ladder
 
 Level 1: Screenshot or active-window summary.
@@ -60,4 +64,3 @@ Rules:
 - Use dry-run descriptions.
 - Require confirmation before clicks that change state.
 - Keep an emergency stop.
-

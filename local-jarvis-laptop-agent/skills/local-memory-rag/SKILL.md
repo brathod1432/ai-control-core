@@ -13,6 +13,10 @@ category: local-agent
 
 # Local Memory RAG
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are used; memory retrieval and curation prompts use this same model.
+
 ## Memory Tiers
 
 Session:
@@ -60,4 +64,3 @@ Jarvis must support:
 - Delete all memories of a type.
 - Disable memory writes.
 - Export memory index.
-

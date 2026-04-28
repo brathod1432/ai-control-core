@@ -14,7 +14,7 @@ import urllib.request
 
 
 BASE_URL = "http://127.0.0.1:11434"
-MODEL = "qwen-local"
+MODEL = "qwen2.5:3b"
 
 
 SYSTEM_PROMPT = """You are Jarvis, a local-first laptop assistant.

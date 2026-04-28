@@ -1,5 +1,9 @@
 # Security Model
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are permitted by default.
+
 ## Default Deny
 
 Jarvis should default to denial for:
@@ -79,4 +83,3 @@ Jarvis must stop and ask before:
 - Destructive file actions.
 - App actions that send, publish, buy, transfer, deploy, or change accounts.
 - Running code from unknown sources.
-

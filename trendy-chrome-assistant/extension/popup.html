@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trendy Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Local assistant</p>
+          <h1>Trendy</h1>
+        </div>
+        <span id="statusDot" class="status-dot" title="Backend status"></span>
+      </header>
+
+      <form id="analysisForm" class="form">
+        <div class="field-with-action">
+          <div>
+            <label for="symbol">Symbol</label>
+            <input id="symbol" name="symbol" type="text" value="AAPL" autocomplete="off" spellcheck="false" maxlength="16" required>
+          </div>
+          <button id="detectButton" class="icon-button" type="button" title="Detect symbol from current tab">Find</button>
+        </div>
+
+        <label for="timeframe">Timeframe</label>
+        <select id="timeframe" name="timeframe">
+          <option value="1d">1 day</option>
+          <option value="1wk">1 week</option>
+          <option value="1mo">1 month</option>
+        </select>
+
+        <label for="lookback">Lookback</label>
+        <input id="lookback" name="lookback" type="number" min="60" max="240" step="10">
+
+        <button id="analyzeButton" type="submit">Analyze</button>
+      </form>
+
+      <canvas id="sparkline" class="sparkline" width="308" height="88" aria-label="Recent price chart"></canvas>
+
+      <section id="result" class="result" aria-live="polite">
+        <p class="muted">Enter a symbol and run a local analysis.</p>
+      </section>
+
+      <section class="watchlist-section">
+        <div class="section-header">
+          <h2>Watchlist</h2>
+          <button id="addWatchlistButton" class="secondary-button" type="button">Add</button>
+        </div>
+        <div id="watchlist" class="watchlist"></div>
+      </section>
+
+      <footer class="footer">
+        Educational analysis only. No trading actions.
+      </footer>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

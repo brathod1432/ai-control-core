@@ -2,6 +2,10 @@
 
 Date: 2026-04-28
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are part of this validation record.
+
 Scope:
 - Static inspection and unit-test validation of the current Local Jarvis Milestone 1 implementation.
 - Contract, config, model runtime, safety, audit, and orchestrator behavior.
@@ -15,7 +19,7 @@ Verification constraints:
 ## Summary
 
 Current implementation state:
-- The code surface now includes shared contracts, config loading, an Ollama-style loopback model client, safety/approval logic, redacted audit logging, CLI entrypoint, and orchestrator.
+- The code surface now includes shared contracts, config loading, an Ollama-style loopback model client, Jarvis persona/system prompt construction, bounded local conversation history with transcript persistence, lightweight agent role prompts, read-only local filesystem inspection, browser/app/screenshot capability gates, safety/approval logic, redacted audit logging, CLI entrypoint, start script, and orchestrator.
 - `pyproject.toml` declares no runtime dependencies, which matches the local-first skeleton goal.
 - `config/jarvis.local.example.json` uses a loopback default model endpoint at `http://127.0.0.1:11434`.
 - `python -m jarvis` has an import-complete CLI path when `PYTHONPATH=src` or the package is installed.
@@ -27,14 +31,44 @@ Validation artifacts added:
 - `tests/unit/test_safety.py` covers intent classification, approvals, refusals, and redaction.
 - `tests/unit/test_audit.py` covers JSONL audit writes and redaction.
 - `tests/unit/test_orchestrator.py` covers safe model calls, approval gating, secret refusal, and model failure reporting.
+- `tests/unit/test_persona.py` covers Jarvis identity, local model constraints, simulated-feelings wording, and verified-action constraints.
+- `tests/unit/test_history.py` covers local transcript writes, redaction, bounded context compression, and internal `agent` role handling.
+- `tests/unit/test_agents.py` covers logical role prompt generation and rejection of unknown roles.
+- `tests/unit/test_capabilities.py` covers approval gates for web, local browser/CDP, screenshot, app inspection, and desktop automation requests.
+- `tests/unit/test_filesystem.py` covers path extraction, allowed roots, excluded noisy directories, text snippets, binary skipping, secret-path skipping, bounds, and no-write inspection behavior.
+- `tests/unit/test_start_script.py` covers static local Ollama/Qwen/startup checks.
 - `planning/MILESTONE_1_STATUS.md` records the current Milestone 1 implementation status.
 
 Unit test result:
 
 ```text
 PYTHONPATH=src python -m unittest discover -s tests/unit
-Ran 32 tests in 0.093s
+Ran 50 tests in 0.136s
 OK
+```
+
+Live local model validation:
+
+```text
+GET http://127.0.0.1:11434/api/tags
+Model found: qwen2.5:3b
+Parameter size: 3.1B
+Quantization: Q4_K_M
+Approx model file size: 1.93 GB
+```
+
+Direct Ollama chat smoke test:
+
+```text
+POST http://127.0.0.1:11434/api/chat
+Response: local qwen ready
+```
+
+Jarvis CLI live smoke test:
+
+```text
+PYTHONPATH=src python -m jarvis --config config/jarvis.local.example.json --once "In one short sentence, confirm you are local Jarvis using Qwen and mention one safety rule."
+Response: I am local Jarvis using Qwen. Always ensure privacy and local control by not performing any action without explicit user consent.
 ```
 
 ## Shared Contract Validation
@@ -68,9 +102,9 @@ Milestone 1 expected:
 - Unit tests for intent/risk decisions.
 
 Current status:
-- Present: package skeleton, contracts, CLI, config loader, Ollama-style model adapter, intent classifier, safety gate, approval prompt helper, audit writer, and unit tests.
+- Present: package skeleton, contracts, CLI, start script, config loader, Ollama-style model adapter, Jarvis persona prompt, bounded history/transcripts, logical agent roles, read-only filesystem inspector, capability gates, intent classifier, safety gate, approval prompt helper, audit writer, and unit tests.
 - Present: local config template, planning, architecture, security docs, smoke-test docs, and milestone status.
-- Missing for later milestones: OpenAI-compatible local adapter, read-only file tools, command runner, memory, browser/Office runtime integration, voice, local UI, and multi-agent runtime.
+- Missing for later milestones: read-only file tools, command runner, memory, browser/Office runtime integration, voice, local UI, and multi-agent runtime. The OpenAI-compatible local adapter remains future-only unless the single local Ollama provider baseline is deliberately revised.
 
 Acceptance criteria status:
 - "Starts without external network": PASS by code inspection and test design; live CLI start was not shell-tested through PowerShell.
@@ -78,6 +112,9 @@ Acceptance criteria status:
 - "Refuses or asks approval for network, shell, file write, desktop control, and high-impact actions": PASS in safety tests.
 - "Logs non-sensitive summaries locally": PASS in audit tests.
 - "Unit tests cover intent/risk decisions": PASS.
+- "Conversation history is bounded and persisted locally": PASS in unit tests.
+- "Agent/subagent prompts share one local model": PASS in unit tests and docs.
+- "Explicit local project analysis is read-only inspection, not write/app automation": PASS in safety, filesystem, and orchestrator tests.
 
 ## Recommended Next Validation Steps
 
@@ -89,4 +126,4 @@ Next validation steps:
 
 ## Verdict
 
-Milestone 1 text MVP foundation is implementation-complete for the local core. It is dependency-free, tested with 32 standard-library unit tests, and ready for Milestone 2 read-only tool work.
+Milestone 1 text MVP foundation plus the next Jarvis persona/history/agent/read-only-filesystem slice is implementation-complete for the local core. It is dependency-free, tested with 50 standard-library unit tests, and ready for formal tool registry work.

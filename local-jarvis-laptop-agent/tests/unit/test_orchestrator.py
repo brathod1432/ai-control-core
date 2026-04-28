@@ -8,6 +8,7 @@ from pathlib import Path
 from jarvis.audit import AuditLogger
 from jarvis.config import ConversationConfig, JarvisConfig, RuntimeConfig, StorageConfig
 from jarvis.contracts import ModelRequest, ModelResponse
+from jarvis.filesystem import FileInspectionConfig, ReadOnlyFilesystemInspector
 from jarvis.model_runtime.base import ModelClient
 from jarvis.orchestrator import JarvisOrchestrator
 
@@ -81,16 +82,56 @@ class OrchestratorTests(unittest.TestCase):
             record = self._last_audit_record(temp_dir)
             self.assertIn("connection refused", record["error"])
 
-    def _orchestrator(self, temp_dir: str, model: FakeModelClient) -> JarvisOrchestrator:
+    def test_explicit_project_summary_uses_read_only_inspector(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            project = Path(temp_dir) / "PremiumPros"
+            project.mkdir()
+            (project / "README.md").write_text("# PremiumPros\nBilling app.", encoding="utf-8")
+            (project / "app.py").write_text("print('premium')", encoding="utf-8")
+            before = {path.name for path in project.iterdir()}
+            model = FakeModelClient("This is a PremiumPros overview from evidence.")
+            orchestrator = self._orchestrator(
+                temp_dir,
+                model,
+                filesystem_root=Path(temp_dir),
+            )
+
+            turn = orchestrator.handle_input(
+                f"Analyze this local project path: {project} and tell me what it is about"
+            )
+
+            after = {path.name for path in project.iterdir()}
+            self.assertEqual(before, after)
+            self.assertTrue(turn.model_used)
+            self.assertIn("read-only", turn.assistant_response.casefold())
+            self.assertEqual(len(model.requests), 1)
+            request_text = "\n".join(message.content for message in model.requests[0].messages)
+            self.assertIn("Read-only local filesystem inspection completed", request_text)
+            self.assertIn("README.md", request_text)
+            self.assertIn("Billing app", request_text)
+
+    def _orchestrator(
+        self,
+        temp_dir: str,
+        model: FakeModelClient,
+        *,
+        filesystem_root: Path | None = None,
+    ) -> JarvisOrchestrator:
         config = JarvisConfig(
             runtime=RuntimeConfig(default_model="qwen-local"),
-            storage=StorageConfig(log_dir=temp_dir),
+            storage=StorageConfig(
+                log_dir=temp_dir,
+                transcript_dir=str(Path(temp_dir) / "sessions"),
+            ),
             conversation=ConversationConfig(max_messages=8),
         )
         return JarvisOrchestrator(
             config=config,
             model_client=model,
             audit_logger=AuditLogger(temp_dir),
+            filesystem_inspector=ReadOnlyFilesystemInspector(
+                FileInspectionConfig(allowed_roots=(filesystem_root or Path(temp_dir),))
+            ),
         )
 
     def _last_audit_record(self, temp_dir: str) -> dict[str, object]:
@@ -101,4 +142,3 @@ class OrchestratorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -1,5 +1,9 @@
 # Architecture
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are part of this architecture.
+
 ## System Overview
 
 ```mermaid
@@ -7,7 +11,7 @@ flowchart TD
   U["User: text or voice"] --> I["Interface Layer"]
   I --> S["Safety Gate"]
   S --> O["Jarvis Core Orchestrator"]
-  O --> M["Local Model Runtime: Qwen/Ollama/llama.cpp/LM Studio"]
+  O --> M["Local Model Runtime: Ollama qwen2.5:3b on 127.0.0.1:11434"]
   O --> R["Local Memory/RAG"]
   O --> T["Tool Registry/MCP"]
   T --> F["Filesystem Tools"]
@@ -58,16 +62,21 @@ Responsibilities:
 
 ### Local Model Runtime
 
-The runtime exposes a local endpoint. Preferred shape:
+The runtime exposes a local Ollama endpoint:
+- Base URL: `http://127.0.0.1:11434`
+- Model: `qwen2.5:3b`
+- API shape: `POST /api/chat`
+
+Every role uses the same runtime and model. Model profiles are prompt/parameter profiles over `qwen2.5:3b`; they are not separate models or providers.
+
+Preferred shape:
 - `POST /api/chat` for chat.
-- `POST /api/generate` for completion.
-- OpenAI-compatible `/v1/chat/completions` if available.
 
 Model profiles:
-- Fast: small Qwen model for quick commands.
-- Balanced: mid-size Qwen instruct model.
-- Coder: Qwen coder model.
-- Critic: same or stronger model with reviewer prompt.
+- Fast: `qwen2.5:3b` with a short, low-temperature prompt.
+- Balanced: `qwen2.5:3b` with normal Jarvis prompt and broader token budget.
+- Coder: `qwen2.5:3b` with a coding-focused prompt.
+- Critic: `qwen2.5:3b` with a reviewer/verifier prompt.
 
 ### Memory/RAG
 
@@ -107,6 +116,7 @@ Optional specialists:
 
 Coordinator rule:
 - The core orchestrator remains accountable for task decomposition, integration, and final response.
+- Specialists are subagent prompts over the same local Ollama `qwen2.5:3b` runtime.
 
 ## Data Flow
 
@@ -136,4 +146,3 @@ Recommended runtime storage:
 ```
 
 Inside this repo, keep only templates, examples, and non-sensitive validation artifacts.
-

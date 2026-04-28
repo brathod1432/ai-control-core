@@ -7,7 +7,8 @@ from pathlib import Path
 
 from .audit import AuditLogger
 from .config import load_config
-from .model_runtime.ollama import create_model_client
+from .history import transcript_paths
+from .model_runtime import create_model_client
 from .orchestrator import JarvisOrchestrator
 
 
@@ -47,7 +48,8 @@ def main(argv: list[str] | None = None) -> int:
         print(turn.assistant_response)
         return 0 if turn.error is None else 2
 
-    print("Local Jarvis MVP. Type '/exit' to quit, '/help' for commands.")
+    print("Jarvis local assistant. Type '/exit' to quit, '/help' for commands.")
+    print(f"Model: {orchestrator.config.runtime.default_model} at {orchestrator.config.runtime.base_url}")
     while True:
         try:
             user_input = input("you> ").strip()
@@ -60,13 +62,18 @@ def main(argv: list[str] | None = None) -> int:
         if user_input in {"/exit", "/quit"}:
             return 0
         if user_input == "/help":
-            print("Commands: /help, /exit, /quit. Risky actions are proposal-only in this MVP.")
+            print("Commands: /help, /status, /exit, /quit. Risky actions are proposal-only unless approved.")
+            continue
+        if user_input == "/status":
+            paths = transcript_paths(orchestrator.history)
+            print(f"Model: {orchestrator.config.runtime.default_model}")
+            print(f"Transcript JSONL: {paths['jsonl']}")
+            print(f"Transcript Markdown: {paths['markdown']}")
             continue
 
         turn = orchestrator.handle_input(user_input)
-        print(f"jarvis> {turn.assistant_response}")
+        print(f"Jarvis> {turn.assistant_response}")
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

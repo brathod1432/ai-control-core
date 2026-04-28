@@ -16,10 +16,11 @@ from urllib.parse import urlparse
 
 DEFAULT_BASE_URL = "http://127.0.0.1:11434"
 DEFAULT_CHAT_ENDPOINT = "/api/chat"
-DEFAULT_MODEL = "qwen-local"
+DEFAULT_MODEL = "qwen2.5:3b"
 DEFAULT_PROVIDER = "ollama"
 DEFAULT_TEMPERATURE = 0.2
 DEFAULT_LOG_DIR = "%USERPROFILE%/.local-jarvis/logs"
+DEFAULT_TRANSCRIPT_DIR = "%USERPROFILE%/.local-jarvis/sessions"
 DEFAULT_MAX_MESSAGES = 40
 
 
@@ -40,6 +41,7 @@ class RuntimeConfig:
 @dataclass(frozen=True)
 class StorageConfig:
     log_dir: str = DEFAULT_LOG_DIR
+    transcript_dir: str = DEFAULT_TRANSCRIPT_DIR
 
 
 @dataclass(frozen=True)
@@ -149,7 +151,8 @@ def _optional_positive_int(raw: dict[str, Any], key: str) -> int | None:
 
 def _load_storage_config(raw: dict[str, Any]) -> StorageConfig:
     log_dir = _storage_path_value(raw, "log_dir", DEFAULT_LOG_DIR)
-    return StorageConfig(log_dir=log_dir)
+    transcript_dir = _storage_path_value(raw, "transcript_dir", DEFAULT_TRANSCRIPT_DIR)
+    return StorageConfig(log_dir=log_dir, transcript_dir=transcript_dir)
 
 
 def _load_conversation_config(raw: dict[str, Any]) -> ConversationConfig:

@@ -13,6 +13,10 @@ category: local-agent
 
 # Tool Orchestration MCP
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are used by tool orchestration.
+
 ## Tool Registry Fields
 
 ```json
@@ -58,4 +62,3 @@ High impact:
 - Separate read tools from write tools.
 - Add dry-run to risky tools.
 - Log tool summaries, not raw sensitive payloads.
-
