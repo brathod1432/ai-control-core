@@ -13,6 +13,10 @@ category: local-agent
 
 # Voice Interface
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are used; voice input and output do not change the model provider.
+
 ## Recommended Progression
 
 1. Text-only CLI.
@@ -46,4 +50,3 @@ category: local-agent
 ```text
 Wake/push -> transcribe -> display transcript -> classify risk -> answer or ask confirmation -> speak concise response -> log summary
 ```
-

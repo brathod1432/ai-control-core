@@ -1,0 +1,7 @@
+{
+  "name": "information-security-manager-iso27001",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

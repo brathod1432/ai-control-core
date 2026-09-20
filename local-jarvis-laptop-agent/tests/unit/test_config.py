@@ -13,12 +13,13 @@ class LoadConfigTests(unittest.TestCase):
         config = load_config()
 
         self.assertIsInstance(config, JarvisConfig)
-        self.assertEqual(config.runtime.default_model, "qwen-local")
+        self.assertEqual(config.runtime.default_model, "qwen2.5:3b")
         self.assertEqual(config.runtime.base_url, "http://127.0.0.1:11434")
         self.assertEqual(config.runtime.chat_endpoint, "/api/chat")
         self.assertEqual(config.runtime.temperature, 0.2)
         self.assertIsNone(config.runtime.max_tokens)
         self.assertIn(".local-jarvis", config.storage.log_dir)
+        self.assertIn(".local-jarvis", config.storage.transcript_dir)
         self.assertEqual(config.conversation.max_messages, 40)
 
     def test_load_config_reads_runtime_values(self) -> None:
@@ -31,7 +32,7 @@ class LoadConfigTests(unittest.TestCase):
                 "temperature": 0.1,
                 "max_tokens": 2048,
             },
-            "storage": {"log_dir": "./logs"},
+            "storage": {"log_dir": "./logs", "transcript_dir": "./sessions"},
             "conversation": {"max_messages": 12},
             "ignored": {"value": True},
         }
@@ -44,6 +45,7 @@ class LoadConfigTests(unittest.TestCase):
         self.assertEqual(config.runtime.temperature, 0.1)
         self.assertEqual(config.runtime.max_tokens, 2048)
         self.assertTrue(config.storage.log_dir.endswith("logs"))
+        self.assertTrue(config.storage.transcript_dir.endswith("sessions"))
         self.assertEqual(config.conversation.max_messages, 12)
 
     def test_load_config_rejects_non_loopback_base_url(self) -> None:

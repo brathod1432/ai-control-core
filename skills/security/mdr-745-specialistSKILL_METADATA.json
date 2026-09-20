@@ -1,0 +1,7 @@
+{
+  "name": "mdr-745-specialist",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

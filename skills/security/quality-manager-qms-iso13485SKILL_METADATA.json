@@ -1,0 +1,7 @@
+{
+  "name": "quality-manager-qms-iso13485",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

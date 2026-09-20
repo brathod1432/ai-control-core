@@ -18,6 +18,10 @@ category: local-agent
 
 Use this pack to design and build a local personal assistant that runs on the user's laptop and uses a local/offline model such as Qwen.
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are allowed by the current design.
+
 ## Subskills
 
 Read only the relevant subskill:
@@ -91,4 +95,3 @@ When designing or implementing Jarvis, produce:
 - MVP implementation steps.
 - Smoke tests.
 - Known risks and stop points.
-

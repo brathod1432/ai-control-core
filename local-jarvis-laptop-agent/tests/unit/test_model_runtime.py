@@ -80,7 +80,7 @@ class ModelRuntimeTests(unittest.TestCase):
         response.__enter__ = mock.Mock(return_value=response)
         response.__exit__ = mock.Mock(return_value=None)
         urlopen.return_value = response
-        client = create_model_client(JarvisConfig(runtime=RuntimeConfig()))
+        client = create_model_client(JarvisConfig(runtime=RuntimeConfig(default_model="qwen-local")))
 
         result = client.chat(
             ModelRequest(
@@ -119,4 +119,3 @@ class ModelRuntimeTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -1,0 +1,193 @@
+\documentclass[11pt,a4paper,oneside]{scrreprt}
+
+% Encoding, language, and typography
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{parskip}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+
+% Page layout
+\usepackage[a4paper,margin=25mm,headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\nouppercase{\leftmark}}
+\rhead{Version 1.0}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Tables, figures, and code
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible,
+  showstringspaces=false
+}
+
+% Bibliography and references
+\usepackage[
+  backend=biber,
+  style=authoryear,
+  sorting=nyt
+]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Professional Report Title},
+  pdfauthor={Author or Organization},
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!45!black
+}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% Index, glossary, and acronyms
+\usepackage{imakeidx}
+\makeindex
+\usepackage[acronym,toc]{glossaries}
+\makeglossaries
+\newacronym{api}{API}{Application Programming Interface}
+
+% Document metadata
+\newcommand{\DocumentTitle}{Professional Report Title}
+\newcommand{\DocumentSubtitle}{Subtitle or Project Name}
+\newcommand{\DocumentAuthor}{Author or Organization}
+\newcommand{\DocumentVersion}{1.0}
+\newcommand{\DocumentStatus}{Draft}
+\newcommand{\DocumentDate}{\today}
+\newcommand{\DocumentClassification}{Internal}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{18mm}
+  {\sffamily\bfseries\LARGE \DocumentTitle\par}
+  \vspace{4mm}
+  {\sffamily\Large \DocumentSubtitle\par}
+  \vfill
+  \begin{tabular}{ll}
+    Author & \DocumentAuthor \\
+    Version & \DocumentVersion \\
+    Status & \DocumentStatus \\
+    Classification & \DocumentClassification \\
+    Date & \DocumentDate \\
+  \end{tabular}
+  \vfill
+  {\small Prepared with LaTeX}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\chapter*{Executive Summary}
+\addcontentsline{toc}{chapter}{Executive Summary}
+Summarize the purpose, scope, key findings, and recommendations in one page or less.
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printglossary[type=\acronymtype,title={Acronyms}]
+\printglossary
+
+\clearpage
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\label{chap:introduction}
+
+Introduce the document purpose, audience, background, and scope. Define important terms such as \gls{api} and index important concepts\index{professional documentation}.
+
+\section{Purpose}
+\label{sec:purpose}
+
+State what the document helps readers decide, understand, approve, or implement.
+
+\section{Scope}
+\label{sec:scope}
+
+Describe what is included and excluded.
+
+\chapter{Methodology}
+\label{chap:methodology}
+
+Explain the source material, analysis method, review approach, and assumptions.
+
+\chapter{Findings}
+\label{chap:findings}
+
+Use structured headings, tables, figures, and references. See \cref{tab:summary} for a sample table and \cref{fig:example} for a sample figure placeholder.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Summary of Findings}
+  \label{tab:summary}
+  \begin{tabularx}{\textwidth}{l l X}
+    \toprule
+    ID & Priority & Finding \\
+    \midrule
+    F-001 & High & Replace this row with a concise finding and supporting evidence. \\
+    F-002 & Medium & Add enough detail for readers to understand impact and next action. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\rule{0pt}{45mm}\rule{0.85\textwidth}{0pt}}
+  \caption{Example figure placeholder}
+  \label{fig:example}
+\end{figure}
+
+\chapter{Recommendations}
+\label{chap:recommendations}
+
+Prioritize recommendations by impact, effort, risk, and owner. Cite sources when factual claims depend on external evidence, for example \parencite{knuth1984texbook}.
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+
+Close with the most important decision, next step, or takeaway.
+
+\printbibliography[heading=bibintoc]
+
+\appendix
+
+\chapter{Document Control}
+\label{app:document-control}
+
+\begin{longtable}{p{0.18\textwidth} p{0.18\textwidth} p{0.22\textwidth} p{0.32\textwidth}}
+  \caption{Revision History}
+  \label{tab:revision-history} \\
+  \toprule
+  Version & Date & Author & Notes \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Version & Date & Author & Notes \\
+  \midrule
+  \endhead
+  1.0 & \DocumentDate & \DocumentAuthor & Initial draft. \\
+  \bottomrule
+\end{longtable}
+
+\printindex
+
+\end{document}
+

@@ -1,0 +1,7 @@
+{
+  "name": "skill-template",
+  "description": "﻿---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

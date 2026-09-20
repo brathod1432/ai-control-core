@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Trendy Chrome Trading Assistant",
+  "version": "0.1.0",
+  "description": "Local-first public market trend assistant for educational analysis.",
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Trendy Assistant",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.tradingview.com/*",
+        "https://finance.yahoo.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}

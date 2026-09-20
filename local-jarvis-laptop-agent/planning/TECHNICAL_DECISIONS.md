@@ -1,5 +1,9 @@
 # Technical Decisions
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are currently accepted.
+
 ## Accepted Decisions
 
 ### ADR-001: Local-First By Default
@@ -70,32 +74,31 @@ Reason:
 Consequence:
 - Remote/mobile access requires a separate explicit design.
 
-### ADR-007: Qwen Runtime Is Adapter-Based
+### ADR-007: Qwen Runtime Uses One Local Ollama Provider
 
 Decision:
-- The orchestrator talks to a `ModelClient` interface, not directly to Ollama/llama.cpp/LM Studio.
+- The orchestrator talks to a `ModelClient` interface, and the current accepted provider is local Ollama at `http://127.0.0.1:11434` using `qwen2.5:3b`.
+- Every agent, subagent, profile, and verifier prompt uses that same model.
 
 Reason:
-- The local runtime may change based on hardware and preference.
+- The current MVP needs one predictable local model boundary with no cloud fallback or hidden provider variation.
 
 Consequence:
-- Need small adapters for each runtime style.
+- Future adapters can be designed, but they are not active providers unless this decision is explicitly revised.
 
 ## Proposed Decisions Needing User Choice
 
 ### PDR-001: Preferred Local Model Runtime
 
 Options:
-- Ollama: easiest MVP.
-- llama.cpp server: most local-control friendly.
-- LM Studio: easiest model UI.
-- vLLM: best for GPU/server but likely overkill.
+- Current accepted baseline: Ollama on `http://127.0.0.1:11434` with `qwen2.5:3b`.
+- Future-only alternatives: llama.cpp server, LM Studio, vLLM, or OpenAI-compatible local servers.
 
 Recommendation:
-- Start with Ollama-compatible adapter and OpenAI-compatible local adapter. This covers Ollama, LM Studio, and many llama.cpp setups.
+- Keep the live target as Ollama `qwen2.5:3b` until there is a concrete reason to revise the single-provider baseline.
 
 Decision needed:
-- Which runtime should be the first live target on this laptop?
+- Whether any future adapter is valuable enough to justify revising the current single-provider baseline.
 
 ### PDR-002: Implementation Language
 
@@ -172,4 +175,3 @@ Review ADRs:
 - Before adding voice.
 - Before adding desktop/app automation.
 - Before adding multi-agent autonomy.
-

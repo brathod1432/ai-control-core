@@ -1,0 +1,7 @@
+{
+  "name": "latex-documentation",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

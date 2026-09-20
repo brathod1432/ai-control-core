@@ -1,8 +1,12 @@
 # Master Development Plan
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are part of this development plan.
+
 ## 1. Project Vision
 
-Build a local-first Jarvis-like laptop assistant that can run on a personal Windows laptop using a local/offline model such as Qwen. Jarvis should help with reasoning, planning, local files, coding, browser inspection, Office documents, memory, and eventually voice interaction while preserving privacy and requiring approval for risky actions.
+Build a local-first Jarvis-like laptop assistant that can run on a personal Windows laptop using the single local Ollama `qwen2.5:3b` model. Jarvis should help with reasoning, planning, local files, coding, browser inspection, Office documents, memory, and eventually voice interaction while preserving privacy and requiring approval for risky actions.
 
 The north star is not "an AI that can do anything". The north star is "a dependable local chief-of-staff for the laptop" with clear permissions, visible actions, safe defaults, and incremental trust.
 
@@ -74,7 +78,7 @@ Primary runtime components:
 - Interface layer: CLI first, then local web UI, then voice.
 - Safety gate: policy engine for risk classification and approval.
 - Core orchestrator: intent classification, context assembly, model call, tool routing, response synthesis.
-- Local model provider: Qwen via Ollama, llama.cpp, LM Studio, or OpenAI-compatible local endpoint.
+- Local model provider: Ollama on `http://127.0.0.1:11434` using `qwen2.5:3b` for every agent and subagent.
 - Tool registry: typed local tools with permission metadata.
 - Memory/RAG: session, task, project, and user-approved long-term memory.
 - Audit log: local structured events.
@@ -592,4 +596,3 @@ Do not start with:
 - Multi-agent autonomy.
 
 The glamorous parts will be more fun once the boring spine is trustworthy. Very Jarvis, actually: all elegance on the outside, very disciplined machinery underneath.
-

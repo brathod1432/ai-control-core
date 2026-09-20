@@ -26,6 +26,22 @@ class SafetyTests(unittest.TestCase):
         self.assertIs(decision.permission, PermissionClass.READ_LOCAL)
         self.assertFalse(decision.approval_required)
 
+    def test_project_analysis_and_file_types_are_read_only_inspection(self) -> None:
+        requests = (
+            r"go through each file in C:\Users\kbrat\PycharmProjects\PremiumPros and summarize it",
+            r"analyze this local project path: C:\Users\kbrat\PycharmProjects\PremiumPros",
+            "give me an overview of what this project is about",
+            "list all files with their types",
+        )
+
+        for request in requests:
+            with self.subTest(request=request):
+                decision = evaluate_safety(request)
+                self.assertIs(decision.intent, Intent.INSPECT)
+                self.assertIs(decision.action, DecisionAction.TOOL_CALL)
+                self.assertIs(decision.permission, PermissionClass.READ_LOCAL)
+                self.assertFalse(decision.approval_required)
+
     def test_writes_and_execution_require_approval(self) -> None:
         write_decision = evaluate_safety("Edit src/jarvis/contracts.py")
         execute_decision = evaluate_safety("Run this local script")
@@ -95,4 +111,3 @@ class SafetyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

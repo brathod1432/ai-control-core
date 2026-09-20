@@ -2,6 +2,10 @@
 
 Date: 2026-04-28
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are part of the current status.
+
 ## Current Status
 
 Milestone 1 is now implemented as a safe text MVP foundation.
@@ -20,7 +24,7 @@ Implemented or present:
 - Unit tests for contracts, config, model adapter, safety, audit, and orchestrator behavior.
 
 Not yet implemented:
-- OpenAI-compatible local adapter.
+- OpenAI-compatible local adapter; this remains future-only unless the single local Ollama provider baseline is deliberately revised.
 - Read-only filesystem tools.
 - Patch proposal/apply workflow.
 - Command runner.
@@ -40,6 +44,15 @@ Result:
 ```text
 Ran 32 tests in 0.093s
 OK
+```
+
+Live local model validation:
+
+```text
+Ollama endpoint: http://127.0.0.1:11434
+Model: qwen2.5:3b
+Direct smoke response: local qwen ready
+Jarvis CLI smoke response: I am local Jarvis using Qwen. Always ensure privacy and local control by not performing any action without explicit user consent.
 ```
 
 Note:

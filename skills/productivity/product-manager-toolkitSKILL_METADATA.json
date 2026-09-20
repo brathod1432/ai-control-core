@@ -1,0 +1,7 @@
+{
+  "name": "product-manager-toolkit",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

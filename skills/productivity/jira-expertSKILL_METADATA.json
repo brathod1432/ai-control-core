@@ -1,0 +1,7 @@
+{
+  "name": "jira-expert",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

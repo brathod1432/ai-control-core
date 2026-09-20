@@ -12,42 +12,42 @@ category: local-agent
 
 # Offline Qwen Runtime
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are allowed by the current runtime plan.
+
 ## Runtime Options
 
 Ollama:
-- Easiest local endpoint.
-- Good for quick MVP.
-- Common endpoint: `http://127.0.0.1:11434/api/chat`.
+- Current active runtime.
+- Endpoint: `http://127.0.0.1:11434/api/chat`.
+- Model: `qwen2.5:3b`.
 
 llama.cpp server:
-- Strong control over GGUF models.
-- Good for fully local, scriptable setups.
-- Common endpoint can be OpenAI-compatible depending on launch flags.
+- Future-only alternative requiring explicit redesign and approval.
 
 LM Studio:
-- UI-friendly local model management.
-- Often exposes OpenAI-compatible local server.
+- Future-only alternative requiring explicit redesign and approval.
 
 vLLM:
-- Strong throughput for GPU/server setups.
-- Usually overkill for a laptop Jarvis MVP.
+- Future-only alternative requiring explicit redesign and approval.
 
 ## Model Profiles
 
 Fast:
-- Small Qwen instruct model.
+- `qwen2.5:3b` with a fast prompt/parameter profile.
 - Used for intent classification and short answers.
 
 Balanced:
-- Mid-size Qwen instruct model.
+- `qwen2.5:3b` with the normal Jarvis prompt/parameter profile.
 - Used for normal Jarvis reasoning.
 
 Coder:
-- Qwen coder model.
+- `qwen2.5:3b` with a coding prompt/parameter profile.
 - Used for code and repo work.
 
 Critic:
-- Balanced or coder model with critic prompt.
+- `qwen2.5:3b` with a critic prompt.
 - Used for verification and review.
 
 ## Endpoint Contract
@@ -58,7 +58,7 @@ Jarvis should abstract the runtime behind one local interface:
 {
   "provider": "ollama|llama_cpp|lm_studio|openai_compatible_local",
   "base_url": "http://127.0.0.1:11434",
-  "model": "qwen-local",
+  "model": "qwen2.5:3b",
   "timeout_seconds": 120,
   "temperature": 0.2,
   "max_tokens": 2048
@@ -67,10 +67,8 @@ Jarvis should abstract the runtime behind one local interface:
 
 ## Hardware Tradeoffs
 
-- 7B class models: practical on many laptops with quantization.
-- 14B class models: better reasoning, more memory pressure.
-- 32B+ class models: may be slow or require strong GPU/RAM.
-- Quantized GGUF models reduce memory at quality cost.
+- Current target: `qwen2.5:3b` on local Ollama.
+- Larger or specialized models require explicit redesign and approval before use.
 
 ## Validation
 
@@ -79,4 +77,3 @@ Jarvis should abstract the runtime behind one local interface:
 - No remote endpoint is configured.
 - Logs do not include secrets or private file content.
 - Timeout and cancellation work.
-

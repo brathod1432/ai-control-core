@@ -1,0 +1,7 @@
+{
+  "name": "local-office-automation",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

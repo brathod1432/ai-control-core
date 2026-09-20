@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trendy Settings</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="options-page">
+    <main class="options-shell">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Settings</p>
+          <h1>Trendy</h1>
+        </div>
+      </header>
+
+      <form id="optionsForm" class="form">
+        <label for="apiBaseUrl">Backend URL</label>
+        <input id="apiBaseUrl" name="apiBaseUrl" type="url" placeholder="http://127.0.0.1:8000" required>
+
+        <label for="lookback">Default lookback</label>
+        <input id="lookback" name="lookback" type="number" min="60" max="240" step="10">
+
+        <button type="submit">Save Settings</button>
+      </form>
+
+      <p id="optionsStatus" class="muted" aria-live="polite"></p>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
+

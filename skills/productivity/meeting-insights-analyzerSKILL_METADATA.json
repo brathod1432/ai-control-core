@@ -1,0 +1,7 @@
+{
+  "name": "meeting-insights-analyzer",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

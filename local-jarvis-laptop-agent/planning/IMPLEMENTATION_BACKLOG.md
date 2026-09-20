@@ -1,5 +1,9 @@
 # Implementation Backlog
 
+## Current Model Baseline
+
+All agents and subagents use the same single local Ollama `qwen2.5:3b` model through `http://127.0.0.1:11434`. No cloud LLMs, remote model APIs, separate providers, or per-agent model pools are part of this backlog.
+
 ## Epic 1: Project Skeleton
 
 ### Story 1.1: Create Python Package Skeleton
@@ -81,7 +85,7 @@ Acceptance criteria:
 ### Story 2.3: OpenAI-Compatible Local Adapter
 
 Goal:
-- Support LM Studio or llama.cpp OpenAI-compatible local servers.
+- Keep a future local-only adapter option documented, but do not enable a second provider while the current baseline is single-model Ollama.
 
 Tasks:
 - Implement `/v1/chat/completions` adapter.
@@ -92,6 +96,7 @@ Tasks:
 Acceptance criteria:
 - Works against fake local endpoint.
 - Refuses non-loopback unless network is explicitly approved.
+- Remains disabled unless the single-provider baseline is deliberately revised.
 
 ## Epic 3: Orchestrator
 
@@ -512,4 +517,3 @@ Tasks:
 
 Acceptance criteria:
 - User can inspect and delete memory.
-

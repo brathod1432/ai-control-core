@@ -1,0 +1,7 @@
+{
+  "name": "product-analytics",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}
