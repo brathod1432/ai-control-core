@@ -1,0 +1,7 @@
+{
+  "name": "capa-officer",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

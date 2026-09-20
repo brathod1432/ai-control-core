@@ -1,0 +1,7 @@
+{
+  "name": "product-strategist",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

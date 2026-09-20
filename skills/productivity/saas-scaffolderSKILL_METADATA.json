@@ -1,0 +1,7 @@
+{
+  "name": "saas-scaffolder",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "regulatory-affairs-head",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

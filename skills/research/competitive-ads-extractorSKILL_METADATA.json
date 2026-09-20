@@ -1,0 +1,7 @@
+{
+  "name": "competitive-ads-extractor",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

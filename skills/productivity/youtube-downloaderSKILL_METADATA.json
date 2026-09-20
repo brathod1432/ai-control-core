@@ -1,0 +1,7 @@
+{
+  "name": "youtube-downloader",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "meeting-analyzer",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "cv-document-suite",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

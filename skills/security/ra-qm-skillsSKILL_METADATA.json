@@ -1,0 +1,7 @@
+{
+  "name": "ra-qm-skills",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

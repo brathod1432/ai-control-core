@@ -1,0 +1,7 @@
+{
+  "name": "landing-page-generator",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

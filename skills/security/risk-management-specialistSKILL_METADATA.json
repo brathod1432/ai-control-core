@@ -1,0 +1,7 @@
+{
+  "name": "risk-management-specialist",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

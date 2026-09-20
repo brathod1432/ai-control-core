@@ -1,0 +1,7 @@
+{
+  "name": "lead-research-assistant",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

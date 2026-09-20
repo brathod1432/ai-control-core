@@ -1,0 +1,7 @@
+{
+  "name": "quality-manager-qmr",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

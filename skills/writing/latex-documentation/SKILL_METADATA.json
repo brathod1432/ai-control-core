@@ -1,0 +1,18 @@
+{
+  "category": "writing",
+  "generated_at": "2026-05-01T00:00:00+02:00",
+  "name": "latex-documentation",
+  "risk_categories": [
+    "filesystem",
+    "command-execution",
+    "network",
+    "package-install",
+    "secrets",
+    "document-content"
+  ],
+  "source_relative_path": "writing/latex-documentation",
+  "source_repository": "local",
+  "status": "local_only",
+  "version": "1.0.0"
+}
+

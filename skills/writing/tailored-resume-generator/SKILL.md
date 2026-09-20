@@ -350,3 +350,7 @@ Ask if user wants to:
 ## Privacy Note
 
 This skill processes your personal and professional information to generate tailored resumes. Always review the output before submitting to ensure accuracy and appropriateness. Remove or modify any information you prefer not to share with potential employers.
+
+## Related Local Skills
+
+- Use `cv-document-suite` when the tailored resume needs to become an editable DOCX, PPTX, ODT, PDF, or Markdown analysis package, or when the user asks for visual CV design, color palettes, template selection, or format fallback handling.

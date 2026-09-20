@@ -1,0 +1,7 @@
+{
+  "name": "spec-to-repo",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

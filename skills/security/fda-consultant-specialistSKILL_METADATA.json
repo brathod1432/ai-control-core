@@ -1,0 +1,7 @@
+{
+  "name": "fda-consultant-specialist",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

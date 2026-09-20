@@ -1,0 +1,7 @@
+{
+  "name": "quality-documentation-manager",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}

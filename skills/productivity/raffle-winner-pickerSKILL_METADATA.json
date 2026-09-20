@@ -1,0 +1,7 @@
+{
+  "name": "raffle-winner-picker",
+  "description": "---",
+  "entrypoint": "index.ts",
+  "tags": [],
+  "schema": {}
+}
